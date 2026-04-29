@@ -7,7 +7,7 @@
   --bg: #f7f8fc;
   --muted: #5b6480;
   --border: #e6e8f0;
-  --gradient-brand: linear-gradient(135deg, #2F5BFF 0%, #6A5CFF 100%);
+  --gradient-brand: linear-gradient(135deg, #0B1F5B 0%, #6A5CFF 100%);
   --gradient-deep: linear-gradient(135deg, #0B1F5B 0%, #5d5cff 60%, #5555c3 100%);
   --gradient-hero:
     radial-gradient(at 20% 10%, rgba(106, 92, 255, .18), transparent 50%),
@@ -191,7 +191,7 @@ nav {
   flex: 1;
   padding: 80px 60px;
   color: #fff;
-  background:var(--gradient-deep);
+  background:var(--gradient-brand);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1629,7 +1629,7 @@ nav {
 
 /* FOOTER */
 .footer-ultra {
-  background: var(--gradient-deep);
+  background: var(--gradient-brand);
   color: #fff;
   padding: 80px 0 30px;
 }
