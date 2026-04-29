@@ -703,9 +703,9 @@ font-size: 17px;
 }
 
 .svc-lnk {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--accent);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--deep);
   display: flex;
   align-items: center;
   gap: 6px;
