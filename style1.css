@@ -2546,8 +2546,8 @@ nav {
 }
 
 .hero-sub {
-  font-size: .92rem;
-  color: rgba(255, 255, 255, .58);
+  font-size: 17px;
+  color: var(--bg);
   line-height: 1.8;
   font-weight: 300
 }
@@ -2563,7 +2563,7 @@ nav {
   align-items: center;
   gap: 8px;
   padding: 14px 26px;
-  background: var(--accent);
+  background: var(--gradient-brand);
   color: #fff;
   font-weight: 500;
   font-size: 18px;
@@ -2881,7 +2881,7 @@ nav {
 
 .gallery-filters button.active,
 .gallery-filters button:hover {
-  background: linear-gradient(135deg,#2F5BFF,#6A5CFF);
+  background: var(--gradient-brand);
   color: #fff;
 }
 
