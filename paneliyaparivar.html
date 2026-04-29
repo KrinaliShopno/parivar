@@ -7,1082 +7,510 @@
   <title>Paneliya — Community Management At Your Fingertips</title>
   <meta name="description"
     content="Parivar.me brings families and communities together with a beautiful, modern platform for members, events, gallery and more." />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/> -->
   <link rel="stylesheet" href="style1.css" />
 </head>
 
 <body>
 
-  <!-- Page-load progress bar -->
-  <div class="page-bar"></div>
-  <!-- Cursor glow -->
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-
-  <!-- NAVBAR -->
-  <header id="topNav" class="site-nav">
-
-    <nav class="glass shadow-soft rounded-2xl px-3 px-md-4 py-3">
-
-      <div class="container d-flex align-items-center justify-content-between">
-
-        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
-          <h2>Paneliya Parivar</h2>
-        </a>
-
-        <ul class="nav d-none d-lg-flex gap-4 mb-0">
-          <li><a href="#about" class="nav-link-custom">About</a></li>
-          <li><a href="#members" class="nav-link-custom">Members</a></li>
-          <li><a href="#events" class="nav-link-custom">Events</a></li>
-          <li><a href="#gallery" class="nav-link-custom">Gallery</a></li>
-          <li><a href="#contact" class="nav-link-custom">Contact</a></li>
-        </ul>
-
-        <div class="d-none d-md-flex align-items-center gap-2">
-          <a href="#Login" class="btn btn-brand shine">Login</a>
-        </div>
-
-        <button class="btn d-md-none p-1 fs-3 text-primary-deep" id="menuBtn">
-          <i class="bi bi-list"></i>
-        </button>
-
-      </div>
-
-    </nav>
-
-  </header>
-  <!-- HERO -->
-
-  <!-- <section class="hero bg-hero-gradient position-relative overflow-hidden">
-
-
-    <div id="heroBanner" class="carousel slide carousel-fade hero-slider" data-bs-ride="carousel"
-      data-bs-interval="3000">
-
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <img src="assets/event-1.jpg" class="img-fluid hero-mock" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/event-2.jpg" class="img-fluid hero-mock" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/event-3.jpg" class="img-fluid hero-mock" alt="">
-        </div>
-
-      </div>
-
+ <!-- TOP BAR -->
+<div class="topbar">
+  <div class="tb-inner">
+    <div class="tb-left">
+      <span><i class="bi bi-telephone-fill"></i><a href="tel:+919876543210"> +91 98765 43210</a></span>
+      <span><i class="bi bi-envelope-fill"></i><a href="mailto:info@paneliyaparivar.org"> info@paneliyaparivar.org</a></span>
+      <span><i class="bi bi-geo-alt-fill"></i> <a href="https://maps.app.goo.gl/DjHjwa86XLG4xgLg6"> Surat, Gujarat, India</a></span>
     </div>
-    <button class="hero-arrow hero-prev" type="button" data-bs-target="#heroBanner" data-bs-slide="prev">
-      <svg viewBox="0 0 24 24">
-        <path d="M15 6l-6 6 6 6" />
-      </svg>
-    </button>
-
-    <button class="hero-arrow hero-next" type="button" data-bs-target="#heroBanner" data-bs-slide="next">
-      <svg viewBox="0 0 24 24">
-        <path d="M9 6l6 6-6 6" />
-      </svg>
-    </button>
-  </section> -->
-<div class="pw">
-
-  <nav class="pnav">
-    <div class="pnav-logo">
-      <div class="pnav-logo-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      </div>
-      <span class="pnav-brand">Paneliya Parivar</span>
+    <div class="tb-right">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+      <a href="#"><i class="bi bi-whatsapp"></i></a>
     </div>
-    <div class="pnav-links">
-      <a href="#">About</a>
-      <a href="#">Members</a>
-      <a href="#">Events</a>
-      <a href="#">Gallery</a>
-      <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="snav">
+  <div class="nav-in">
+    <div class="nav-logo">
+      <div class="nav-logo-ico"><i class="bi bi-house-heart-fill"></i></div>
+      <span class="nav-brand">Paneliya Parivar</span>
     </div>
-    <button class="pnav-btn">Login</button>
-  </nav>
+    <ul class="nav-ul">
+      <li><a href="#about"><i class="bi bi-info-circle"></i>About</a></li>
+      <li><a href="#services"><i class="bi bi-grid-3x3-gap"></i>Services</a></li>
+      <li><a href="#members"><i class="bi bi-people"></i>Members</a></li>
+      <li><a href="#gallery"><i class="bi bi-images"></i>Gallery</a></li>
+      <li><a href="#events"><i class="bi bi-calendar-event"></i>Events</a></li>
+      <li><a href="#contact"><i class="bi bi-envelope"></i>Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-login"><i class="bi bi-box-arrow-in-right"></i>Login</a>
+  </div>
+</nav>
 
-  <div class="slides">
-
-    <div class="slide on" data-idx="0">
-      <img src="assets/photo-1529156069898-49953e39b3ac.png" alt="Family" />
-      <div class="slide-ov"></div>
-    </div>
-
-    <div class="slide" data-idx="1">
-      <img src="assets/photo-1511795409834-ef04bbd61622.png" alt="Festival" />
-      <div class="slide-ov"></div>
-    </div>
-
-    <div class="slide" data-idx="2">
-      <img src="assets/photo-1511632765486-a01980e01a18.png" alt="Celebration" />
-      <div class="slide-ov"></div>
-    </div>
-
-    <!-- Content overlay -->
-    <div class="hero-content">
-      <div class="hero-left">
-        <div class="eyebrow">
-          <span class="eyebrow-dot"></span>
-          <span>Paneliya Parivar</span>
-        </div>
-
-        <div class="hero-title" id="heroTitle">
-          <span class="t-line">Where every family</span>
-          <span class="t-line">finds its</span>
-          <span class="t-grad" id="heroGrad">forever home.</span>
-        </div>
-
-        <p class="hero-sub" id="heroSub">
-          A modern, private platform for families and communities to connect,
-          celebrate traditions, and preserve memories across every generation.
-        </p>
-
-        <div class="hero-btns">
-          <a href="#" class="btn-primary">
-            Join Parivar
-            <svg style="width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <!-- <a href="#" class="btn-ghost">
-            <svg style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" style="fill:currentColor;stroke:none"/></svg>
-            Watch Video
-          </a> -->
-        </div>
-
-        <!-- <div class="hero-stats">
-          <div class="hstat">
-            <span class="hstat-n">500+</span>
-            <span class="hstat-l">Communities</span>
-          </div>
-          <div class="hstat">
-            <span class="hstat-n">50K+</span>
-            <span class="hstat-l">Members</span>
-          </div>
-          <div class="hstat">
-            <span class="hstat-n">1M+</span>
-            <span class="hstat-l">Memories</span>
-          </div>
-        </div> -->
-      </div>
-    </div>
-
-    <!-- Floating card -->
-    <!-- <div class="float-card">
-      <div class="fc-row">
-        <div class="fc-ico">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <div>
-          <div class="fc-n">50K+</div>
-          <div class="fc-l">Active Members</div>
-        </div>
-      </div>
-      <div class="fc-div"></div>
-      <div class="fc-row">
-        <div class="fc-ico">
-          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        </div>
-        <div>
-          <div class="fc-n">12K+</div>
-          <div class="fc-l">Events Hosted</div>
-        </div>
-      </div>
-      <div class="fc-div"></div>
-      <div class="fc-row">
-        <div class="fc-ico">
-          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" style="fill:rgba(255,255,255,.2)"/></svg>
-        </div>
-        <div>
-          <div class="fc-n">Trusted</div>
-          <div class="fc-l">Since 2018</div>
-        </div>
-      </div>
+<!-- HERO -->
+<div class="hero">
+  <div class="hslide on" data-idx="0">
+    <img src="assets/photo-1511632765486-a01980e01a18.png" alt="Family Gathering"/>
+  </div>
+  <div class="hslide" data-idx="1">
+    <img src="assets/photo-1511795409834-ef04bbd61622.png" alt="Festival Celebration"/>
+  </div>
+  <div class="hslide" data-idx="2">
+    <img src="assets/photo-1529156069898-49953e39b3ac.png" alt="Community Event"/>
+  </div>
+  <div class="hov"></div>
+  <div class="hcontent">
+    <!-- <div class="h-ey"><div class="edot"></div>Paneliya Parivar</div>
+    <h1 class="h-title">Where Every Family<br/>Finds Its <span>Forever Home.</span></h1>
+    <p class="h-sub">A modern, private platform for families and communities to connect, celebrate traditions, and preserve memories across every generation.</p>
+    <div class="h-btns">
+      <a href="#about" class="btn-hm"><i class="bi bi-heart-fill"></i>Join Parivar</a>
+      <a href="#events" class="btn-hg"><i class="bi bi-calendar-event"></i>View Events</a>
     </div> -->
-
-    <!-- Slide number watermark -->
-    <div class="slide-label">
-      <span class="sl-n" id="slNum">01</span>
-    </div>
-
-    <!-- Bottom bar -->
-    <div class="bottom-bar">
-      <div class="slide-thumbs">
-        <div class="thumb on" data-tidx="0">
-          <img src="assets/photo-1529156069898-49953e39b3ac.png" alt="" />
-        </div>
-        <div class="thumb" data-tidx="1">
-          <img src="assets/photo-1511795409834-ef04bbd61622.png" alt="" />
-        </div>
-        <div class="thumb" data-tidx="2">
-          <img src="assets/photo-1511632765486-a01980e01a18.png" alt="" />
-        </div>
-      </div>
-      <div class="slide-arrows">
-        <button class="arr" id="aPrev">
-          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="arr" id="aNext">
-          <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="prog"><div class="prog-fill" id="pf"></div></div>
   </div>
-</div>
-
-
-  <!-- <section class="hero">
-
-    <div class="hero__track">
-
-      <div class="hero__slide on">
-        <img src="assets/photo-1529156069898-49953e39b3ac.png" />
-      </div>
-
-      <div class="hero__slide">
-        <img src="assets/photo-1511795409834-ef04bbd61622.png" />
-      </div>
-
-      <div class="hero__slide">
-        <img src="assets/photo-1511632765486-a01980e01a18.png" />
-      </div>
-
-    </div>
-
-    <div class="hero__copy">
-     
-      <span class="tag-chip"> Paneliya Parivar</span>
-      <h2 class="section-title mt-3">
-        Where every family finds its <br />
-        <span class="text-gradient">forever home.</span>
-      </h2>
-      <p class="text-muted-2 mt-3" style="max-width:520px">
-        A modern, private platform for families and communities to connect, celebrate traditions, and preserve memories
-        across every generation.
-      </p>
-      <div class="d-flex flex-wrap gap-3 mt-4">
-        <a href="#register" class="btn btn-brand btn-lg shine d-inline-flex align-items-center gap-2">
-          Join Parivar <i class="bi bi-arrow-right"></i>
-        </a>
-        
-      </div>
-    
-    </div>
-
-  
-    <button class="hero__prev" id="hPrev" aria-label="Previous">
-      <svg viewBox="0 0 24 24">
-        <polyline points="15 18 9 12 15 6" />
-      </svg>
-    </button>
-    <button class="hero__next" id="hNext" aria-label="Next">
-      <svg viewBox="0 0 24 24">
-        <polyline points="9 6 15 12 9 18" />
-      </svg>
-    </button>
-
-
-  </section> -->
-
-  <!-- ABOUT / STATS -->
-  <section id="about" class="py-section position-relative overflow-hidden">
-    <div class="float-shape shape-3" style="left:-80px;top:120px"></div>
-    <div class="container position-relative">
-      <div class="row g-5 align-items-center">
-        <!-- LEFT: image collage -->
-        <div class="col-lg-6">
-          <div class="about-mockup-wrap">
-            <div class="about-blob"></div>
-            <img src="assets/Gemini_Generated_Image_r734ikr734ikr734-Photoroom.png" alt="Parivar About screen preview"
-              class="about-mockup" />
-            <div class="about-float-card glass shadow-glow">
-              <div class="aico"><i class="bi bi-heart-fill"></i></div>
-              <div>
-                <!-- <div class="fw-bold text-primary-deep">50,000+</div> -->
-                <div class="small text-muted-2">Happy Members</div>
-              </div>
-            </div>
-            <div class="about-float-badge glass shadow-card">
-              <i class="bi bi-patch-check-fill text-accent"></i>
-              <span class="small fw-semibold text-primary-deep">Trusted Community</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT: content -->
-        <div class="col-lg-6">
-          <span class="tag-chip">About Paneliya Parivar</span>
-          <h2 class="section-title mt-3">
-            Built for families.<br />
-            Designed for <span class="text-gradient">togetherness</span>.
-          </h2>
-          <p class="text-muted-2 mt-3" style="max-width:520px">
-            Parivar.me is a warm, modern community platform that helps families and groups
-            stay beautifully connected — combining elegant design with the joy of being together.
-          </p>
-
-          <ul class="about-list mt-4 list-unstyled">
-            <li><span class="tick"><i class="bi bi-check2"></i></span> Bring every generation onto one private space
-            </li>
-            <li><span class="tick"><i class="bi bi-check2"></i></span> Plan events, share photos &amp; preserve memories
-            </li>
-            <li><span class="tick"><i class="bi bi-check2"></i></span> Designed with privacy &amp; warmth at its core
-            </li>
-          </ul>
-
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="#register" class="btn btn-brand btn-lg shine d-inline-flex align-items-center gap-2">
-              Join Parivar <i class="bi bi-arrow-right"></i>
-            </a>
-            <!-- <a href="#features" class="btn btn-glass btn-lg d-inline-flex align-items-center gap-2">
-            <i class="bi bi-info-circle"></i> Learn More
-          </a> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- STATS -->
-      <div class="row g-3 g-md-4 mt-5 pt-md-3">
-        <div class="col-6 col-md-3">
-          <div class="stat-card glass lift">
-            <div class="stat-ico"><i class="bi bi-people-fill"></i></div>
-            <div class="stat-num text-gradient">500+</div>
-            <div class="small text-muted-2">Communities</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="stat-card glass lift">
-            <div class="stat-ico"><i class="bi bi-person-hearts"></i></div>
-            <div class="stat-num text-gradient">50K+</div>
-            <div class="small text-muted-2">Members</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="stat-card glass lift">
-            <div class="stat-ico"><i class="bi bi-calendar-heart-fill"></i></div>
-            <div class="stat-num text-gradient">12K+</div>
-            <div class="small text-muted-2">Events Hosted</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="stat-card glass lift">
-            <div class="stat-ico"><i class="bi bi-images"></i></div>
-            <div class="stat-num text-gradient">1M+</div>
-            <div class="small text-muted-2">Memories Shared</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- MEMBERS -->
-  <section id="members" class="py-section bg-soft">
-    <div class="container">
-      <div class="text-center mx-auto" style="max-width:680px">
-        <span class="tag-chip">Members</span>
-        <h2 class="section-title mt-3">Meet our <span class="text-gradient">vibrant family</span></h2>
-        <p class="text-muted-2 mt-3">A glimpse into the wonderful people who make our community feel like home.</p>
-      </div>
-      <div class="row g-4 mt-4">
-        <div class="col-sm-6 col-lg-3">
-          <article class="member-card lift">
-            <div class="member-img">
-              <img src="assets/member-1.jpg" alt="Aarav Sharma" />
-              <span class="member-status"><i class="bi bi-circle-fill"></i> Online</span>
-            </div>
-            <div class="member-body">
-              <h5>Aarav Sharma</h5>
-              <div class="member-role">Community President</div>
-              <div class="member-chips">
-                <span class="m-chip">Founder</span>
-                <span class="m-chip">Mumbai</span>
-                <span class="m-chip">A+</span>
-              </div>
-              <a href="#" class="member-connect">Connect <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <article class="member-card lift">
-            <div class="member-img">
-              <img src="assets/member-2.jpg" alt="Priya Shah" />
-              <span class="member-status"><i class="bi bi-circle-fill"></i> Online</span>
-            </div>
-            <div class="member-body">
-              <h5>Priya Shah</h5>
-              <div class="member-role">Health Coordinator</div>
-              <div class="member-chips">
-                <span class="m-chip">Doctor</span>
-                <span class="m-chip">Surat</span>
-                <span class="m-chip">O+</span>
-              </div>
-              <a href="#" class="member-connect">Connect <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <article class="member-card lift">
-            <div class="member-img">
-              <img src="assets/member-3.jpg" alt="Rajesh Patel" />
-              <span class="member-status status-away"><i class="bi bi-circle-fill"></i> Elder</span>
-            </div>
-            <div class="member-body">
-              <h5>Rajesh Patel</h5>
-              <div class="member-role">Elder &amp; Mentor</div>
-              <div class="member-chips">
-                <span class="m-chip">Trustee</span>
-                <span class="m-chip">Ahmedabad</span>
-                <span class="m-chip">B+</span>
-              </div>
-              <a href="#" class="member-connect">Connect <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <article class="member-card lift">
-            <div class="member-img">
-              <img src="assets/member-4.jpg" alt="Ananya Verma" />
-              <span class="member-status"><i class="bi bi-circle-fill"></i> Online</span>
-            </div>
-            <div class="member-body">
-              <h5>Ananya Verma</h5>
-              <div class="member-role">Member Relations</div>
-              <div class="member-chips">
-                <span class="m-chip">Designer</span>
-                <span class="m-chip">Vadodara</span>
-                <span class="m-chip">AB+</span>
-              </div>
-              <a href="#" class="member-connect">Connect <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- GALLERY -->
-<section id="gallery" class="py-section bg-soft">
-  <div class="container">
-
-    <div class="text-center mx-auto" style="max-width:680px">
-      <span class="tag-chip">Gallery</span>
-      <h2 class="section-title mt-3">Memories that <span class="text-gradient">last forever</span></h2>
-      <p class="text-muted-2 mt-3">A glimpse into the laughter, love and traditions our community shares.</p>
-    </div>
-
-    <!-- FILTER TABS -->
-<div class="gallery-filters text-center mt-4">
-  <button class="active" data-filter="all">All Memories</button>
-  <button data-filter="festival">Festivals</button>
-  <button data-filter="family">Family</button>
-  <button data-filter="cultural">Cultural</button>
-  <button data-filter="milap">Annual Milap</button>
-</div>
-
-<div class="gallery-grid mt-4">
-
-  <div class="g-item large" data-category="milap">
-    <img src="assets/gallery-1.jpg">
+  <div class="h-thumbs">
+    <div class="hthumb on" data-tidx="0"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=120&q=60&fit=crop" alt=""/></div>
+    <div class="hthumb" data-tidx="1"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=120&q=60&fit=crop" alt=""/></div>
+    <div class="hthumb" data-tidx="2"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=120&q=60&fit=crop" alt=""/></div>
   </div>
-
-  <div class="g-item" data-category="festival">
-    <img src="assets/gallery-2.jpg">
-  </div>
-
-  <div class="g-item" data-category="family">
-    <img src="assets/gallery-3.jpg">
-  </div>
-
-  <div class="g-item wide" data-category="cultural">
-    <img src="assets/gallery-4.jpg">
-  </div>
-
-  <div class="g-item" data-category="family">
-    <img src="assets/gallery-5.jpg">
-  </div>
-
-  <!-- <div class="g-item tall" data-category="festival">
-    <img src="assets/gallery-6.jpg">
+  <!-- <div class="h-counter">
+    <span class="hcn" id="hCur">01</span>
+    <span class="hcs"></span>
+    <span class="hct">03</span>
   </div> -->
-
+  <div class="h-arrows">
+    <button class="harr" id="hPrev"><i class="bi bi-chevron-left"></i></button>
+    <button class="harr" id="hNext"><i class="bi bi-chevron-right"></i></button>
+  </div>
+  <!-- <div class="hprog"><div class="hpf" id="hpf"></div></div> -->
 </div>
 
-  </div>
-</section>
-
-
-  <!-- CONTACT -->
-  <!-- BOOTSTRAP ICONS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-<section class="contact-ultra" id="contact">
+<!-- STATS -->
+<div class="stats-strip">
   <div class="container">
-
-    <div class="contact-ultra-box">
-
-      <!-- LEFT -->
-      <div class="contact-ultra-left">
-
-        <span class="badge-ultra">GET IN TOUCH</span>
-
-        <h2>Let’s Create Something <span>Powerful</span></h2>
-
-        <p>We help communities connect, grow, and scale digitally with beautiful experiences.</p>
-
-<div class="contact-features-ultra">
-
-  <div class="feature-item">
-    <span class="icon-box"><i class="bi bi-lightning-charge-fill"></i></span>
-    <span>Fast Response</span>
+    <div class="sg">
+      <div class="si"><div class="si-ico"><i class="bi bi-people-fill"></i></div><div class="si-n">500+</div><div class="si-l">Communities</div></div>
+      <div class="si"><div class="si-ico"><i class="bi bi-person-hearts"></i></div><div class="si-n">50K+</div><div class="si-l">Members</div></div>
+      <div class="si"><div class="si-ico"><i class="bi bi-calendar-heart-fill"></i></div><div class="si-n">12K+</div><div class="si-l">Events Hosted</div></div>
+      <div class="si"><div class="si-ico"><i class="bi bi-images"></i></div><div class="si-n">1M+</div><div class="si-l">Memories Shared</div></div>
+    </div>
   </div>
-
-  <div class="feature-item">
-    <span class="icon-box"><i class="bi bi-people-fill"></i></span>
-    <span>Friendly Support</span>
-  </div>
-
-  <div class="feature-item">
-    <span class="icon-box"><i class="bi bi-gift-fill"></i></span>
-    <span>Free Setup</span>
-  </div>
-
 </div>
 
-<div class="contact-social-ultra">
-
-  <a href="#" class="social-box"><i class="bi bi-instagram"></i></a>
-  <a href="#" class="social-box"><i class="bi bi-facebook"></i></a>
-  <a href="#" class="social-box"><i class="bi bi-twitter-x"></i></a>
-  <a href="#" class="social-box"><i class="bi bi-linkedin"></i></a>
-
-</div>
-
-      </div>
-
-      <!-- RIGHT -->
-      <div class="contact-ultra-right">
-
-        <h3>Send Message</h3>
-        <p class="form-subtext">We typically respond within a few hours.</p>
-
-        <!-- TABS -->
-        <div class="contact-tabs-ultra">
-          <button class="active" data-type="Join">Join</button>
-          <button data-type="Enquiry">Enquiry</button>
-          <button data-type="RSVP">RSVP</button>
-        </div>
-
-        <form id="ultraForm">
-
-          <div class="input-group-ultra">
-            <input type="text" required>
-            <label>Your Name</label>
-          </div>
-
-          <div class="input-group-ultra">
-            <input type="email" required>
-            <label>Email Address</label>
-          </div>
-
-          <div class="input-group-ultra">
-            <textarea required></textarea>
-            <label>Your Message</label>
-          </div>
-
-          <input type="hidden" id="formType" value="Join">
-
-          <button class="btn-ultra">
-            <i class="bi bi-send-fill me-2"></i> Send Message
-          </button>
-
-        </form>
-
-        <div class="success-box" id="successBox">
-          ✔ Message Sent Successfully
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-  <!-- <div class="bubbles">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div> -->
-</section>
-  <!-- EVENTS -->
-   <section id="events" class="py-5">
+<!-- ABOUT -->
+<section class="about-sec" id="about">
   <div class="container">
- <div class="text-center mx-auto" style="max-width:680px">
-        <span class="tag-chip">Upcoming Events</span>
-        <h2 class="section-title mt-3">Moments worth <span class="text-gradient">celebrating</span></h2>
-        <p class="text-muted-2 mt-3">From weddings to festivals, every gathering is a memory in the making.</p>
+    <div class="ag">
+      <div class="a-iw">
+        <img src="assets/img/main1-Photoroom.png" alt="Parivar Community"/>
+        <!-- <div class="a-badge"><span>50K+</span>Happy Members</div> -->
       </div>
-    <div class="row g-4 mt-4">
-
-      <!-- EVENT CARD -->
-      <div class="col-md-6 col-lg-4">
-        <div class="event-pro-card">
-
-          <!-- IMAGE -->
-          <div class="event-pro-img">
-            <img src="assets/event-1.jpg" alt="">
-
-            <div class="event-date">
-              <span>15</span>
-              <small>MAY</small>
-            </div>
-
-            <div class="event-status">REGISTERING</div>
-
-            <div class="event-overlay">
-              <i class="bi bi-stars"></i> Annual Milap 2026
-            </div>
-          </div>
-
-          <!-- CONTENT -->
-          <div class="event-pro-content">
-
-            <div class="event-top">
-              <span class="event-tag">FAMILY REUNION</span>
-              <span class="event-users">
-                <i class="bi bi-people-fill"></i> 2,000+ Expected
-              </span>
-            </div>
-
-            <h5>Paneliya Annual Milap & Cultural Festival</h5>
-
-            <ul class="event-meta">
-              <li><i class="bi bi-geo-alt-fill"></i> Paneliya Samaj Hall, Ahmedabad</li>
-              <li><i class="bi bi-clock-fill"></i> 10:00 AM – 9:00 PM</li>
-              <li><i class="bi bi-calendar-event-fill"></i> Saturday, 15 May 2026</li>
-            </ul>
-
-            <div class="event-bottom">
-              <a href="#" class="event-btn">
-                <i class="bi bi-check-circle-fill"></i> Register Now
-              </a>
-              <span class="event-price">Entry: <b>Free</b></span>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-       <div class="col-md-6 col-lg-4">
-        <div class="event-pro-card">
-
-          <!-- IMAGE -->
-          <div class="event-pro-img">
-            <img src="assets/event-2.jpg" alt="">
-
-            <div class="event-date">
-              <span>15</span>
-              <small>MAY</small>
-            </div>
-
-            <div class="event-status">REGISTERING</div>
-
-            <div class="event-overlay">
-              <i class="bi bi-stars"></i> Annual Milap 2026
-            </div>
-          </div>
-
-          <!-- CONTENT -->
-          <div class="event-pro-content">
-
-            <div class="event-top">
-              <span class="event-tag">Diwali Community Night</span>
-              <span class="event-users">
-                <i class="bi bi-people-fill"></i> 2,000+ Expected
-              </span>
-            </div>
-
-            <h5>Paneliya Annual Milap & Cultural Festival</h5>
-
-            <ul class="event-meta">
-              <li><i class="bi bi-geo-alt-fill"></i> Paneliya Samaj Hall, Ahmedabad</li>
-              <li><i class="bi bi-clock-fill"></i> 10:00 AM – 9:00 PM</li>
-              <li><i class="bi bi-calendar-event-fill"></i> Saturday, 15 May 2026</li>
-            </ul>
-
-            <div class="event-bottom">
-              <a href="#" class="event-btn">
-                <i class="bi bi-check-circle-fill"></i> Register Now
-              </a>
-              <span class="event-price">Entry: <b>Free</b></span>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-             <div class="col-md-6 col-lg-4">
-        <div class="event-pro-card">
-
-          <!-- IMAGE -->
-          <div class="event-pro-img">
-            <img src="assets/event-3.jpg" alt="">
-
-            <div class="event-date">
-              <span>15</span>
-              <small>MAY</small>
-            </div>
-
-            <!-- <div class="event-status">REGISTERING</div> -->
-
-            <div class="event-overlay">
-              <i class="bi bi-stars"></i> Annual Milap 2026
-            </div>
-          </div>
-
-          <!-- CONTENT -->
-          <div class="event-pro-content">
-
-            <div class="event-top">
-              <span class="event-tag">Annual Family Reunion</span>
-              <span class="event-users">
-                <i class="bi bi-people-fill"></i> 2,000+ Expected
-              </span>
-            </div>
-
-            <h5>Paneliya Annual Milap & Cultural Festival</h5>
-
-            <ul class="event-meta">
-              <li><i class="bi bi-geo-alt-fill"></i> Paneliya Samaj Hall, Ahmedabad</li>
-              <li><i class="bi bi-clock-fill"></i> 10:00 AM – 9:00 PM</li>
-              <li><i class="bi bi-calendar-event-fill"></i> Saturday, 15 May 2026</li>
-            </ul>
-
-            <div class="event-bottom">
-              <a href="#" class="event-btn">
-                <i class="bi bi-check-circle-fill"></i> Register Now
-              </a>
-              <span class="event-price">Entry: <b>Free</b></span>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-  <!-- CTA -->
-  <!-- <section class="py-section-1">
-    <div class="container">
-      <div class="cta-banner bg-deep-gradient text-white shadow-glow position-relative overflow-hidden">
-        <div class="float-shape shape-cta"></div>
-        <div class="row align-items-center position-relative">
-          <div class="col-lg-8">
-            <h2 class="fw-bolder mb-2">Bring your parivar online today.</h2>
-            <p class="mb-0 opacity-75">Join 500+ communities using Parivar.me to stay beautifully connected.</p>
-          </div>
-          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a href="#register" class="btn btn-light btn-lg fw-semibold shine d-inline-flex align-items-center gap-2">
-              Start Free <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- FOOTER -->
-  <!-- <footer class="bg-deep-gradient text-white pt-5 pb-4">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="d-flex align-items-center gap-2 mb-3"><img src="assets/logo.png" alt="" height="36"
-              style="filter:brightness(0) invert(1)" /></div>
-          <p class="opacity-75 small">A warm, modern home for families and communities — where every member matters and
-            every memory is preserved.</p>
-          <div class="d-flex gap-2 mt-3">
-            <a href="#" class="footer-soc"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="footer-soc"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="footer-soc"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="footer-soc"><i class="bi bi-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="footer-h">Product</h6>
-          <ul class="list-unstyled small opacity-75 d-flex flex-column gap-2">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#members">Members</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="footer-h">Company</h6>
-          <ul class="list-unstyled small opacity-75 d-flex flex-column gap-2">
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <h6 class="footer-h">Stay in the loop</h6>
-          <p class="small opacity-75">Get community stories and product updates — once a month, never spammy.</p>
-          <form class="d-flex gap-2" onsubmit="event.preventDefault(); alert('Subscribed!'); this.reset();"><input
-              type="email" required class="form-control" placeholder="you@email.com" /><button
-              class="btn btn-light fw-semibold">Join</button></form>
-        </div>
-      </div>
-      <hr class="border-light opacity-25 my-4" />
-      <div class="d-md-flex justify-content-between small opacity-75">
-        <div>© 2026 Parivar.me. All rights reserved.</div>
-        <div class="d-flex gap-3 mt-2 mt-md-0"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
-      </div>
-    </div>
-  </footer> -->
-<footer class="footer-ultra">
-
-  <div class="container">
-
-    <div class="row gy-5">
-
-      <!-- LEFT -->
-      <div class="col-lg-4">
-
-        <h3 class="footer-logo">Paneliya Parivar</h3>
-
-        <p class="footer-text">
-          A warm, modern home for families and communities — where every member matters and every memory is preserved.
-        </p>
-
-        <div class="footer-social">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-youtube"></i></a>
-        </div>
-
-      </div>
-
-      <!-- PRODUCT -->
-      <div class="col-lg-2 col-6">
-        <h6 class="footer-title">Product</h6>
-        <ul class="footer-links">
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Members</a></li>
-        </ul>
-      </div>
-
-      <!-- COMPANY -->
-      <div class="col-lg-2 col-6">
-        <h6 class="footer-title">Company</h6>
-        <ul class="footer-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-
-      <!-- NEWSLETTER -->
-      <div class="col-lg-4">
-
-        <h6 class="footer-title">Stay In The Loop</h6>
-
-        <p class="footer-text small">
-          Get community stories and product updates — once a month, never spammy.
-        </p>
-
-        <div class="footer-input">
-          <input type="email" placeholder="you@email.com">
-          <button>Join</button>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- BOTTOM -->
-    <div class="footer-bottom">
-      <p>© 2026 Paneliya Parivar. All rights reserved.</p>
-
       <div>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Cookies</a>
+        <div class="a-lbl"><i class="bi bi-house-heart-fill"></i> About Paneliya Parivar</div>
+        <h2 class="a-title">Built for Families.<br/>Designed for <span style="color:#7da7ff;">Togetherness.</span></h2>
+        <p class="a-text">Paneliya Parivar is a warm, modern community platform that helps families and groups stay beautifully connected — combining elegant design with the joy of being together across every generation.</p>
+        <ul class="a-list">
+          <li><span class="chk"><i class="bi bi-check2"></i></span>Bring every generation onto one private space</li>
+          <li><span class="chk"><i class="bi bi-check2"></i></span>Plan events, share photos &amp; preserve memories</li>
+          <li><span class="chk"><i class="bi bi-check2"></i></span>Designed with privacy &amp; warmth at its core</li>
+        </ul>
+        <a href="#contact" class="btn-solid"><i class="bi bi-heart-fill"></i>Join Parivar</a>
       </div>
     </div>
-
   </div>
+</section>
 
+<!-- SERVICES -->
+<section class="svc-sec" id="services">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-tag">Our Services</div>
+      <h2 class="sec-title">What We <span>Offer</span></h2>
+      <div class="div"></div>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-ico"><i class="bi bi-person-plus-fill"></i></div>
+        <div class="svc-t">Member Registration</div>
+        <p class="svc-d">Easy online registration for all Paneliya family members. Maintain a complete digital directory with profiles and contact info.</p>
+        <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="bi bi-calendar-check-fill"></i></div>
+        <div class="svc-t">Event Management</div>
+        <p class="svc-d">Organize and manage community events, milap, festivals, and gatherings. RSVP tracking and announcements all in one place.</p>
+        <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="bi bi-image-fill"></i></div>
+        <div class="svc-t">Photo Gallery</div>
+        <p class="svc-d">Share and preserve precious family memories. Upload photos from events and celebrations for the entire community to cherish.</p>
+        <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="bi bi-heart-pulse-fill"></i></div>
+        <div class="svc-t">Blood Donor Network</div>
+        <p class="svc-d">Connect with blood donors within the community in emergencies. A life-saving network with up-to-date donor details.</p>
+        <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="bi bi-briefcase-fill"></i></div>
+        <div class="svc-t">Business Directory</div>
+        <p class="svc-d">Discover and support businesses run by Paneliya community members. A trusted directory for local services and professionals.</p>
+        <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="bi bi-newspaper"></i></div>
+        <div class="svc-t">News &amp; Updates</div>
+        <p class="svc-d">Stay informed with the latest community news, announcements, and important updates delivered directly to members.</p>
+        <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERS -->
+<section class="mem-sec" id="members">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-tag">Members</div>
+      <h2 class="sec-title">Meet Our <span>Vibrant Family</span></h2>
+      <div class="div"></div>
+    </div>
+    <div class="mem-grid">
+      <div class="mem-card">
+        <div class="mem-img">
+          <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=400&q=80&fit=crop&crop=face" alt="Aarav Sharma"/>
+          <!-- <div class="msb"><i class="bi bi-circle-fill"></i>Online</div> -->
+        </div>
+        <div class="mem-body">
+          <div class="mem-name">Aarav Sharma</div>
+          <div class="mem-role">Community President</div>
+          <div class="mem-chips"><span class="chip">Founder</span><span class="chip">Mumbai</span><span class="chip">A+</span></div>
+          <a href="#" class="btn-con">Connect <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="mem-card">
+        <div class="mem-img">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80&fit=crop&crop=face" alt="Priya Shah"/>
+          <!-- <div class="msb"><i class="bi bi-circle-fill"></i>Online</div> -->
+        </div>
+        <div class="mem-body">
+          <div class="mem-name">Priya Shah</div>
+          <div class="mem-role">Health Coordinator</div>
+          <div class="mem-chips"><span class="chip">Doctor</span><span class="chip">Surat</span><span class="chip">O+</span></div>
+          <a href="#" class="btn-con">Connect <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="mem-card">
+        <div class="mem-img">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80&fit=crop&crop=face" alt="Rajesh Patel"/>
+          <!-- <div class="msb elder"><i class="bi bi-star-fill"></i>Elder</div> -->
+        </div>
+        <div class="mem-body">
+          <div class="mem-name">Rajesh Patel</div>
+          <div class="mem-role">Elder &amp; Mentor</div>
+          <div class="mem-chips"><span class="chip">Trustee</span><span class="chip">Ahmedabad</span><span class="chip">B+</span></div>
+          <a href="#" class="btn-con">Connect <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="mem-card">
+        <div class="mem-img">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80&fit=crop&crop=face" alt="Ananya Verma"/>
+          <!-- <div class="msb"><i class="bi bi-circle-fill"></i>Online</div> -->
+        </div>
+        <div class="mem-body">
+          <div class="mem-name">Ananya Verma</div>
+          <div class="mem-role">Member Relations</div>
+          <div class="mem-chips"><span class="chip">Designer</span><span class="chip">Vadodara</span><span class="chip">AB+</span></div>
+          <a href="#" class="btn-con">Connect <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gal-sec" id="gallery">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-tag">Gallery</div>
+      <h2 class="sec-title">Memories That <span>Last Forever</span></h2>
+      <div class="div"></div>
+    </div>
+    <div class="gf">
+      <button class="active" data-filter="all"><i class="bi bi-grid-3x3-gap-fill"></i> All Memories</button>
+      <button data-filter="festival"><i class="bi bi-stars"></i> Festivals</button>
+      <button data-filter="family"><i class="bi bi-house-heart"></i> Family</button>
+      <button data-filter="cultural"><i class="bi bi-music-note-beamed"></i> Cultural</button>
+      <button data-filter="milap"><i class="bi bi-people-fill"></i> Annual Milap</button>
+    </div>
+    <div class="gg">
+      <div class="gi large" data-category="milap">
+        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=80&fit=crop" alt="Annual Milap"/>
+      </div>
+      <div class="gi" data-category="festival">
+        <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=500&q=80&fit=crop" alt="Festival"/>
+      </div>
+      <div class="gi" data-category="family">
+        <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=500&q=80&fit=crop" alt="Family"/>
+      </div>
+      <div class="gi wide" data-category="cultural">
+        <img src="https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?w=800&q=80&fit=crop" alt="Cultural"/>
+      </div>
+      <div class="gi" data-category="family">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80&fit=crop" alt="Family Gathering"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="ev-sec" id="events">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="sec-tag">Upcoming Events</div>
+      <h2 class="sec-title">Moments Worth <span>Celebrating</span></h2>
+      <div class="div"></div>
+    </div>
+    <div class="ev-grid">
+      <div class="ev-card">
+        <div class="ev-img">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80&fit=crop" alt="Annual Milap"/>
+          <div class="ev-db"><strong>15</strong><span>MAY</span></div>
+          <div class="ev-sb">REGISTERING</div>
+          <div class="ev-ot"><i class="bi bi-stars"></i> Annual Milap 2026</div>
+        </div>
+        <div class="ev-body">
+          <div class="ev-tr">
+            <span class="etag"><i class="bi bi-people-fill"></i> Family Reunion</span>
+            <span class="eusers"><i class="bi bi-people-fill"></i> 2,000+</span>
+          </div>
+          <div class="ev-t">Paneliya Annual Milap &amp; Cultural Festival</div>
+          <ul class="ev-meta">
+            <li><i class="bi bi-geo-alt-fill"></i>Paneliya Samaj Hall, Ahmedabad</li>
+            <li><i class="bi bi-clock-fill"></i>10:00 AM – 9:00 PM</li>
+            <li><i class="bi bi-calendar-event-fill"></i>Saturday, 15 May 2026</li>
+          </ul>
+          <div class="ev-ft">
+            <a href="#" class="btn-reg"><i class="bi bi-check-circle-fill"></i>Register Now</a>
+            <span class="ev-price">Entry: <b>Free</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="ev-card">
+        <div class="ev-img">
+          <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=600&q=80&fit=crop" alt="Diwali Night"/>
+          <div class="ev-db"><strong>20</strong><span>OCT</span></div>
+          <div class="ev-sb">REGISTERING</div>
+          <div class="ev-ot"><i class="bi bi-stars"></i> Diwali Night 2026</div>
+        </div>
+        <div class="ev-body">
+          <div class="ev-tr">
+            <span class="etag"><i class="bi bi-stars"></i> Diwali Night</span>
+            <span class="eusers"><i class="bi bi-people-fill"></i> 1,500+</span>
+          </div>
+          <div class="ev-t">Grand Diwali Community Night &amp; Celebration</div>
+          <ul class="ev-meta">
+            <li><i class="bi bi-geo-alt-fill"></i>Paneliya Samaj Hall, Surat</li>
+            <li><i class="bi bi-clock-fill"></i>6:00 PM – 11:00 PM</li>
+            <li><i class="bi bi-calendar-event-fill"></i>Monday, 20 Oct 2026</li>
+          </ul>
+          <div class="ev-ft">
+            <a href="#" class="btn-reg"><i class="bi bi-check-circle-fill"></i>Register Now</a>
+            <span class="ev-price">Entry: <b>Free</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="ev-card">
+        <div class="ev-img">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80&fit=crop" alt="Family Reunion"/>
+          <div class="ev-db"><strong>12</strong><span>JAN</span></div>
+          <div class="ev-ot"><i class="bi bi-stars"></i> Family Reunion 2027</div>
+        </div>
+        <div class="ev-body">
+          <div class="ev-tr">
+            <span class="etag"><i class="bi bi-house-heart"></i> Family Reunion</span>
+            <span class="eusers"><i class="bi bi-people-fill"></i> 3,000+</span>
+          </div>
+          <div class="ev-t">Paneliya Annual Family Reunion &amp; Gathering</div>
+          <ul class="ev-meta">
+            <li><i class="bi bi-geo-alt-fill"></i>Paneliya Samaj Hall, Vadodara</li>
+            <li><i class="bi bi-clock-fill"></i>9:00 AM – 8:00 PM</li>
+            <li><i class="bi bi-calendar-event-fill"></i>Tuesday, 12 Jan 2027</li>
+          </ul>
+          <div class="ev-ft">
+            <a href="#" class="btn-reg"><i class="bi bi-check-circle-fill"></i>Register Now</a>
+            <span class="ev-price">Entry: <b>Free</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="ct-sec" id="contact">
+  <div class="container">
+    <div class="ct-box">
+      <div class="ct-left">
+        <div style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--background-bg);margin-bottom:10px"><i class="bi bi-chat-heart-fill"></i> Get In Touch</div>
+        <h2>Let's Create Something <span>Powerful</span></h2>
+        <p>We help communities connect, grow, and scale digitally with beautiful experiences.</p>
+        <div class="ct-feats">
+          <div class="cft"><div class="cft-ico"><i class="bi bi-lightning-charge-fill"></i></div>Fast Response</div>
+          <div class="cft"><div class="cft-ico"><i class="bi bi-people-fill"></i></div>Friendly Support</div>
+          <div class="cft"><div class="cft-ico"><i class="bi bi-gift-fill"></i></div>Free Setup</div>
+        </div>
+        <div class="ct-soc">
+          <a href="#" class="csoc"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="csoc"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="csoc"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="csoc"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="csoc"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ct-right">
+        <h3>Send Message</h3>
+        <p>We typically respond within a few hours.</p>
+        <div class="ft-tabs">
+          <button class="active">Join</button>
+          <button>Enquiry</button>
+          <button>RSVP</button>
+        </div>
+        <form id="cForm">
+          <div class="fg"><input type="text" required/><label>Your Name</label></div>
+          <div class="fg"><input type="email" required/><label>Email Address</label></div>
+          <div class="fg"><textarea required></textarea><label>Your Message</label></div>
+          <button class="btn-send" type="submit"><i class="bi bi-send-fill"></i>Send Message</button>
+        </form>
+        <div class="succ" id="succ"><i class="bi bi-check-circle-fill"></i> Message sent successfully!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER — only --deep bg color -->
+<footer>
+  <div class="container">
+    <div class="fg-grid">
+      <div>
+        <div class="fl-brand"><i class="bi bi-house-heart-fill"></i>Paneliya Parivar</div>
+        <p class="fl-desc">A warm, modern home for families and communities — where every member matters and every memory is preserved for generations.</p>
+        <div class="fl-soc">
+          <a href="#" class="fsoc"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="fsoc"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="fsoc"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="fsoc"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="fsoc"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="fh">Quick Links</div>
+        <ul class="fl-ul">
+          <li><a href="#about"><i class="bi bi-chevron-right"></i>About Us</a></li>
+          <li><a href="#services"><i class="bi bi-chevron-right"></i>Services</a></li>
+          <li><a href="#members"><i class="bi bi-chevron-right"></i>Members</a></li>
+          <li><a href="#events"><i class="bi bi-chevron-right"></i>Events</a></li>
+          <li><a href="#gallery"><i class="bi bi-chevron-right"></i>Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fh">Services</div>
+        <ul class="fl-ul">
+          <li><a href="#"><i class="bi bi-chevron-right"></i>Registration</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i>Blood Donors</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i>Business Directory</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i>News &amp; Updates</a></li>
+          <li><a href="#"><i class="bi bi-chevron-right"></i>Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fh">Stay In The Loop</div>
+        <p class="fn-p">Get community stories and product updates — once a month, never spammy.</p>
+        <div class="fin">
+          <input type="email" placeholder="you@email.com"/>
+          <button><i class="bi bi-send-fill"></i> Join</button>
+        </div>
+        <div class="fct">
+          <span><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210"> +91 98765 43210</a> </span>
+          <span><i class="bi bi-envelope-fill"></i><a href="mailto:info@paneliyaparivar.org"> info@paneliyaparivar.org</a></span>
+          <span><i class="bi bi-geo-alt-fill"></i> <a href="https://maps.app.goo.gl/DjHjwa86XLG4xgLg6"> Surat, Gujarat, India</a> </span>
+        </div>
+      </div>
+    </div>
+    <div class="fb">
+      <p>© 2026 Paneliya Parivar. All rights reserved.</p>
+      <div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
 </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-const tabs = document.querySelectorAll(".contact-tabs-ultra button");
 
-tabs.forEach(btn=>{
-  btn.onclick = () => {
-    tabs.forEach(b=>b.classList.remove("active"));
-    btn.classList.add("active");
-    document.getElementById("formType").value = btn.dataset.type;
+<script>
+(function(){
+  const slides=document.querySelectorAll('.hslide'),
+        thumbs=document.querySelectorAll('.hthumb'),
+        pf=document.getElementById('hpf'),
+        cur_el=document.getElementById('hCur');
+  const DUR=5500; let cur=0,elapsed=0;
+  function go(n){
+    slides[cur].classList.remove('on'); thumbs[cur].classList.remove('on');
+    cur=(n+slides.length)%slides.length;
+    slides[cur].classList.add('on'); thumbs[cur].classList.add('on');
+    cur_el.textContent=String(cur+1).padStart(2,'0');
+    elapsed=0; pf.style.width='0%';
+  }
+  function tick(){
+    elapsed+=16; pf.style.width=Math.min(elapsed/DUR*100,100)+'%';
+    if(elapsed>=DUR) go(cur+1);
+    requestAnimationFrame(tick);
+  }
+  document.getElementById('hPrev').onclick=()=>go(cur-1);
+  document.getElementById('hNext').onclick=()=>go(cur+1);
+  thumbs.forEach(t=>t.onclick=()=>go(+t.dataset.tidx));
+  requestAnimationFrame(tick);
+})();
+
+document.querySelectorAll('.gf button').forEach(btn=>{
+  btn.onclick=()=>{
+    document.querySelectorAll('.gf button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const f=btn.dataset.filter;
+    document.querySelectorAll('.gi').forEach(item=>{
+      item.classList.toggle('hide',f!=='all'&&item.dataset.category!==f);
+    });
   };
 });
 
-document.getElementById("ultraForm").addEventListener("submit",(e)=>{
+document.querySelectorAll('.gi').forEach(item=>{
+  item.onclick=()=>{
+    const src=item.querySelector('img').src;
+    const d=document.createElement('div');
+    d.style='position:fixed;inset:0;background:rgba(0,0,0,0.92);display:flex;align-items:center;justify-content:center;z-index:9999;cursor:pointer';
+    d.innerHTML=`<img src="${src}" style="max-width:90%;max-height:90%;border-radius:6px"/>`;
+    d.onclick=()=>d.remove();
+    document.body.appendChild(d);
+  };
+});
+
+document.querySelectorAll('.ft-tabs button').forEach(btn=>{
+  btn.onclick=()=>{
+    document.querySelectorAll('.ft-tabs button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  };
+});
+
+document.getElementById('cForm').addEventListener('submit',e=>{
   e.preventDefault();
-
-  document.getElementById("successBox").style.display = "block";
-  e.target.reset();
-
-  setTimeout(()=>{
-    document.getElementById("successBox").style.display = "none";
-  },3000);
-});
-</script>
-  <script>
-    /* ── Hero carousel ── */
-    (function () {
-      const slides = document.querySelectorAll('.hero__slide');
-      const curEl = document.getElementById('hCur');
-      const prog = document.getElementById('hProg');
-      let cur = 0, timer, elapsed = 0, raf;
-      const DURATION = 5000;
-
-      function show(n) {
-        slides[cur].classList.remove('on');
-        cur = (n + slides.length) % slides.length;
-        slides[cur].classList.add('on');
-        curEl.textContent = String(cur + 1).padStart(2, '0');
-        elapsed = 0;
-        prog.style.width = '0%';
-      }
-
-      function tick() {
-        elapsed += 16;
-        prog.style.width = Math.min(elapsed / DURATION * 100, 100) + '%';
-        if (elapsed >= DURATION) { show(cur + 1) }
-        raf = requestAnimationFrame(tick);
-      }
-
-      document.getElementById('hPrev').onclick = () => show(cur - 1);
-      document.getElementById('hNext').onclick = () => show(cur + 1);
-
-      raf = requestAnimationFrame(tick);
-    })();
-
-    /* ── Scroll reveal ── */
-    (function () {
-      const els = document.querySelectorAll('.reveal');
-      const io = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in') });
-      }, { threshold: 0.12 });
-      els.forEach(el => io.observe(el));
-    })();
-  </script>
-  <script>
-document.querySelectorAll(".g-item img").forEach(img => {
-  img.addEventListener("click", () => {
-    const popup = document.createElement("div");
-    popup.style = `
-      position:fixed;top:0;left:0;width:100%;height:100%;
-      background:rgba(0,0,0,0.9);
-      display:flex;align-items:center;justify-content:center;
-      z-index:9999;
-    `;
-    popup.innerHTML = `<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">`;
-    popup.onclick = () => popup.remove();
-    document.body.appendChild(popup);
-  });
-});
-</script>
-
-  <script>
-(function(){
-  const slides  = document.querySelectorAll('.slide');
-  const thumbs  = document.querySelectorAll('.thumb');
-  const slNum   = document.getElementById('slNum');
-  const pf      = document.getElementById('pf');
-  const texts = [
-    {title:'Where every family<br>finds its', grad:'forever home.', sub:'A modern, private platform for families and communities to connect, celebrate traditions, and preserve memories across every generation.'},
-    {title:'Every celebration<br>deserves a', grad:'special place.', sub:'Plan events, share photos and preserve precious moments — all in one beautiful, secure space made for your parivar.'},
-    {title:'Generations connected<br>through', grad:'love & culture.', sub:'From weddings to festivals, every gathering becomes a cherished memory preserved for future generations of your family.'}
-  ];
-  const DUR = 5500;
-  let cur = 0, elapsed = 0;
-
-  function go(n){
-    slides[cur].classList.remove('on');
-    thumbs[cur].classList.remove('on');
-    cur = (n + slides.length) % slides.length;
-    slides[cur].classList.add('on');
-    thumbs[cur].classList.add('on');
-    slNum.textContent = String(cur+1).padStart(2,'0');
-    const t = texts[cur];
-    document.querySelector('.hero-title').innerHTML =
-      '<span class="t-line">' + t.title.replace('<br>','</span><span class="t-line">') + '</span>' +
-      '<span class="t-grad" style="">' + t.grad + '</span>';
-    document.querySelector('.hero-sub').textContent = t.sub;
-    elapsed = 0; pf.style.width = '0%';
-  }
-
-  function tick(){
-    elapsed += 16;
-    pf.style.width = Math.min(elapsed/DUR*100,100)+'%';
-    if(elapsed >= DUR) go(cur+1);
-    requestAnimationFrame(tick);
-  }
-
-  document.getElementById('aPrev').onclick = () => go(cur-1);
-  document.getElementById('aNext').onclick = () => go(cur+1);
-  thumbs.forEach(t => t.onclick = () => go(+t.dataset.tidx));
-
-  requestAnimationFrame(tick);
-})();
-</script>
-<script>
-const filterBtns = document.querySelectorAll(".gallery-filters button");
-const items = document.querySelectorAll(".g-item");
-
-filterBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-
-    // ACTIVE TAB SWITCH
-    filterBtns.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    const filter = btn.getAttribute("data-filter");
-
-    items.forEach(item => {
-      const category = item.getAttribute("data-category");
-
-      if (filter === "all" || category === filter) {
-        item.classList.remove("hide");
-      } else {
-        item.classList.add("hide");
-      }
-    });
-
-  });
+  const s=document.getElementById('succ');
+  s.style.display='block'; e.target.reset();
+  setTimeout(()=>s.style.display='none',3500);
 });
 </script>
 </body>
-
 </html>
