@@ -16,12 +16,13 @@
 <body>
 
  <!-- TOP BAR -->
+<!-- TOPBAR -->
 <div class="topbar">
   <div class="tb-inner">
     <div class="tb-left">
       <span><i class="bi bi-telephone-fill"></i><a href="tel:+919876543210"> +91 98765 43210</a></span>
       <span><i class="bi bi-envelope-fill"></i><a href="mailto:info@paneliyaparivar.org"> info@paneliyaparivar.org</a></span>
-      <span><i class="bi bi-geo-alt-fill"></i> <a href="https://maps.app.goo.gl/DjHjwa86XLG4xgLg6"> Surat, Gujarat, India</a></span>
+      <span class="tb-addr"><i class="bi bi-geo-alt-fill"></i><a href="https://maps.app.goo.gl/DjHjwa86XLG4xgLg6"> Surat, Gujarat, India</a></span>
     </div>
     <div class="tb-right">
       <a href="#"><i class="bi bi-facebook"></i></a>
@@ -42,15 +43,32 @@
     </div>
     <ul class="nav-ul">
       <li><a href="#about"><i class="bi bi-info-circle"></i>About</a></li>
-      <!-- <li><a href="#services"><i class="bi bi-grid-3x3-gap"></i>Services</a></li> -->
       <li><a href="#members"><i class="bi bi-people"></i>Members</a></li>
       <li><a href="#gallery"><i class="bi bi-images"></i>Gallery</a></li>
       <li><a href="#events"><i class="bi bi-calendar-event"></i>Events</a></li>
       <li><a href="#contact"><i class="bi bi-envelope"></i>Contact</a></li>
     </ul>
     <a href="#contact" class="btn-login"><i class="bi bi-box-arrow-in-right"></i>Login</a>
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY + DRAWER -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-drawer">
+    <ul>
+      <li><a href="#about" class="mob-link"><i class="bi bi-info-circle"></i>About</a></li>
+      <li><a href="#members" class="mob-link"><i class="bi bi-people"></i>Members</a></li>
+      <li><a href="#gallery" class="mob-link"><i class="bi bi-images"></i>Gallery</a></li>
+      <li><a href="#events" class="mob-link"><i class="bi bi-calendar-event"></i>Events</a></li>
+      <li><a href="#contact" class="mob-link"><i class="bi bi-envelope"></i>Contact</a></li>
+    </ul>
+    <a href="#contact" class="mobile-login mob-link"><i class="bi bi-box-arrow-in-right"></i>Login</a>
+  </div>
+</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -107,7 +125,7 @@
   <div class="container">
     <div class="ag">
       <div class="a-iw">
-        <img src="assets/Gemini_Generated_Image_r734ikr734ikr734-Photoroom.png" alt="Parivar Community"/>
+        <img src="assets/parivar-tree2.png" alt="Parivar Community"/>
         <!-- <div class="a-badge"><span>50K+</span>Happy Members</div> -->
       </div>
       <div>
@@ -359,7 +377,7 @@
   <div class="container">
     <div class="ct-box">
       <div class="ct-left">
-        <div style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--background-bg);margin-bottom:10px"><i class="bi bi-chat-heart-fill"></i> Get In Touch</div>
+        <div style="font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--background-bg);margin-bottom:10px"><i class="bi bi-chat-heart-fill"></i> Get In Touch</div>
         <h2>Let's Create Something <span>Powerful</span></h2>
         <p>We help communities connect, grow, and scale digitally with beautiful experiences.</p>
         <div class="ct-feats">
@@ -446,7 +464,7 @@
     </div>
     <div class="fb">
       <p>© 2026 Paneliya Parivar. All rights reserved.</p>
-      <div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
     </div>
   </div>
 </footer>
@@ -511,6 +529,30 @@ document.getElementById('cForm').addEventListener('submit',e=>{
   s.style.display='block'; e.target.reset();
   setTimeout(()=>s.style.display='none',3500);
 });
+</script>
+<script>
+  const ham = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    menu.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  });
+
+  // Close on overlay click
+  menu.addEventListener('click', (e) => {
+    if (e.target === menu) close();
+  });
+
+  // Close on link click
+  document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', close));
+
+  function close() {
+    ham.classList.remove('open');
+    menu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
 </script>
 </body>
 </html>
