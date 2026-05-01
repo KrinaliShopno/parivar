@@ -1,1177 +1,526 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Parivar – Community At Your Fingertip</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paneliya — Community Management At Your Fingertips</title>
+  <meta name="description"
+    content="Parivar.me brings families and communities together with a beautiful, modern platform for members, events, gallery and more." />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" /> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/> -->
+  <link rel="stylesheet" href="style1.css" />
 </head>
+
 <body>
 
-<!-- CUSTOM CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
-<!-- ── NAV ── -->
-<nav id="mainNav">
-<div class="header">
-    <a href="#" class="nav-logo">
-    <div class="nav-logo-mark"><img src="assets/img/parivar.me-Photoroom.png"/></div>
-   
-  </a>
-  <ul class="nav-links">
-     <li><a href="#about">About</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#members">Members</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-   
-    <li><a href="#contact-us">Contact</a></li>
-  </ul>
-  <div class="nav-ctas">
-    <a href="#" class="btn-nav-ghost">Login</a>
-    <a href="#register" class="btn-nav-solid">Register Parivar</a>
-  </div>
-  <div class="nav-ham" onclick="toggleNav()">
-    <span></span><span></span><span></span>
-  </div>
-</div>
-</nav>
-
-<!-- ── HERO ── -->
-<section class="hero" id="home">
-  <div class="hero-blob hero-blob-1"></div>
-  <div class="hero-blob hero-blob-2"></div>
-  <div class="hero-blob hero-blob-3"></div>
-  <div class="hero-dotgrid"></div>
-
-  <div class="hero-inner">
-    
-    <!-- LEFT -->
-    <div class="hero-left">
-      <!-- <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-        Trusted by 500+ Communities Across Gujarat
-      </div> -->
-
-      <h1>Community Management<br><em>At Your Fingertip</em></h1>
-
-      <p class="hero-desc">
-        My Parivar Application is designed to bring together and unite all Parivar family members under one digital roof.
-      </p>
-
-      <div class="hero-btns">
-        <a href="#" class="btn-primary">
-          Download App <i class="bi bi-arrow-right"></i>
-        </a>
-        <a href="#features" class="btn-secondary">
-          Explore Features
-        </a>
+  <!-- TOP BAR -->
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="tb-inner">
+      <div class="tb-left">
+        <span><i class="bi bi-telephone-fill"></i><a href="tel:+919876543210"> +91 98765 43210</a></span>
+        <span><i class="bi bi-envelope-fill"></i><a href="mailto:info@paneliyaparivar.org">
+            info@paneliyaparivar.org</a></span>
+        <span class="tb-addr"><i class="bi bi-geo-alt-fill"></i><a href="https://maps.app.goo.gl/DjHjwa86XLG4xgLg6">
+            Surat, Gujarat, India</a></span>
       </div>
-
-      <div class="hero-kpis">
-        <div class="hero-kpi">
-          <div class="hero-kpi-num" data-count="500">0</div>
-          <div class="hero-kpi-lbl">Communities</div>
-        </div>
-        <div class="hero-kpi">
-          <div class="hero-kpi-num" data-count="50000">0</div>
-          <div class="hero-kpi-lbl">Members</div>
-        </div>
-        <div class="hero-kpi">
-          <div class="hero-kpi-num" data-count="10000">0</div>
-          <div class="hero-kpi-lbl">Events Held</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT -->
-    <div class="hero-right">
-      <div class="hero-scene">
-<img src="assets/img/main1-Photoroom.png"/>
-        <div class="hero-ring"></div>
-        <div class="hero-ring-2"></div>
-        
-        <!-- <div class="hero-card-big">
-          <div class="hcb-top">
-            <div class="hcb-logo">
-              <i class="bi bi-people-fill"></i>
-            </div>
-
-            <div>
-              <div class="hcb-info-name">Patel Parivar</div>
-              <div class="hcb-info-sub">
-                <span class="hcb-online"></span> 18 members online · Ahmedabad
-              </div>
-            </div>
-          </div>
-
-          <div class="hcb-grid">
-            <div class="hcb-stat">
-              <div class="hcb-snum">325</div>
-              <div class="hcb-slbl">Members</div>
-            </div>
-            <div class="hcb-stat">
-              <div class="hcb-snum">42</div>
-              <div class="hcb-slbl">Events</div>
-            </div>
-            <div class="hcb-stat">
-              <div class="hcb-snum">128</div>
-              <div class="hcb-slbl">Biz</div>
-            </div>
-          </div>
-
-          <div class="hcb-event">
-            <div class="hcb-event-icon">
-              <i class="bi bi-calendar-event-fill"></i>
-            </div>
-            <div>
-              <div class="hcb-event-title">Annual Milap 2026</div>
-              <div class="hcb-event-date">May 15 · Ahmedabad</div>
-            </div>
-          </div>
-
-          <div class="hcb-members-row">
-            <div class="hcb-avatars">
-              <div class="hcb-av"><i class="bi bi-person-fill"></i></div>
-              <div class="hcb-av"><i class="bi bi-person"></i></div>
-              <div class="hcb-av"><i class="bi bi-person"></i></div>
-              <div class="hcb-av"><i class="bi bi-person"></i></div>
-            </div>
-            <div class="hcb-more-count">+321 more members</div>
-          </div>
-        </div>
-
-
-        <div class="hero-widget hw-bday">
-          <div class="hw-dot"></div>
-          <div class="hw-icon">
-            <i class="bi bi-cake2-fill"></i>
-          </div>
-          <div>
-            <div class="hw-t">3 Birthdays Today!</div>
-            <div class="hw-s">Wishes sent · Push notification</div>
-          </div>
-        </div>
-
-        <div class="hero-widget hw-notice">
-          <div class="hw-icon">
-            <i class="bi bi-megaphone-fill"></i>
-          </div>
-          <div>
-            <div class="hw-t">New Notice Posted</div>
-            <div class="hw-s">Annual Gathering Registration Open</div>
-          </div>
-        </div>
-
-        <div class="hero-widget hw-fund">
-          <div class="hw-icon">
-            <i class="bi bi-cash-stack"></i>
-          </div>
-          <div>
-            <div class="hw-t">₹42L+ Raised</div>
-            <div class="hw-s">Education Fund · 72% complete</div>
-          </div>
-        </div> -->
-
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- ── ABOUT ── -->
-<section class="about-sec" id="about">
-  <div class="about-gridlines"></div>
-  <div class="about-inner">
-      <div class="about-right-panel reveal">
-      <!-- <div class="about-stats">
-        <div class="astat"><div class="astat-icon"><i class="bi bi-house"></i></div><div class="astat-num">500+</div><div class="astat-lbl">Communities</div></div>
-        <div class="astat"><div class="astat-icon"><i class="bi bi-people"></i></div><div class="astat-num">50K+</div><div class="astat-lbl">Members</div></div>
-        <div class="astat"><div class="astat-icon"><i class="bi bi-star-fill"></i></div><div class="astat-num">4.8</div><div class="astat-lbl">App Rating</div></div>
-        <div class="astat"><div class="astat-icon"><i class="bi bi-trophy"></i></div><div class="astat-num">12+</div><div class="astat-lbl">Years Serving</div></div>
-      </div>
-      <div class="about-story-card">
-        <blockquote>"My Parivar has transformed how our 800-member Patel community stays connected. Events, notices, donations — everything in one place."</blockquote>
-        <div class="about-story-author">
-          <div class="asa-av"><i class="bi bi-person-badge"></i></div>
-          <div>
-            <div class="asa-name">Rameshbhai Patel</div>
-            <div class="asa-role">President, Patel Parivar Ahmedabad</div>
-          </div>
-        </div>
-      </div> -->
-      <img src="assets/img/Gemini_Generated_Image_htgw7khtgw7khtgw-Photoroom.png"/>
-    </div>
-    <div class="about-text reveal">
-        <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-       About Us
-      </div>
-      <!-- <div class="sec-badge about-badge"></div> -->
-      <h2>Built to <em>Unite Families,</em><br>Designed for Everyone</h2>
-      <p>In our everyday busy lives, it's hard to gather and manage an entire community. My Parivar helps you connect and bring all members under one digital roof — to share happiness, knowledge, and support each other.</p>
-      <p>Whether it's a family, community or village, we make engagement seamless and beautiful. Our platform is built with love for Gujarati communities, with support for local language and culture.</p>
-      <div class="about-feats">
-        <!-- <div class="about-feat"><div class="af-ico"><i class="bi bi-link-45deg"></i></div><div><div class="rstep-t" style="color:rgba(255,255,255,.9)">Seamless Community Connection</div><div class="rstep-s">Bring all members under one digital roof, instantly</div></div></div> -->
-        <div class="about-feat"><div class="af-ico"><i class="bi bi-shield-check"></i></div><div><div class="rstep-t" style="color:rgba(255,255,255,.9)">Secure & Private Data Management</div><div class="rstep-s">Your community's data stays safe and private always</div></div></div>
-        <!-- <div class="about-feat"><div class="af-ico"><i class="bi bi-phone"></i></div><div><div class="rstep-t" style="color:rgba(255,255,255,.9)">Android & iOS – Free to Download</div><div class="rstep-s">Available on both major platforms at no cost</div></div></div> -->
-        <div class="about-feat"><div class="af-ico"><i class="bi bi-globe"></i></div><div><div class="rstep-t" style="color:rgba(255,255,255,.9)">Gujarati & English Language Support</div><div class="rstep-s">Fully localised for inclusive community communication</div></div></div>
-      </div>
-    </div>
-  
-  </div>
-</section>
-<!-- ── FEATURES ── -->
-<!-- ═══════════════════════════════════════
-     SECTION 1: FEATURES
-═══════════════════════════════════════ -->
-<section class="features-sec" id="features">
-  <div class="sec-max">
-
-    <!-- Header with image/stats -->
-    <div class="feat-header">
-      <div class="feat-header-left">
-        <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-       FEATURES
-      </div>
-        <!-- <div class="sec-badge"></div> -->
-        <h2>Everything Your<br><em>Community Needs</em></h2>
-        <p>Bringing all community members together at your fingertips with powerful, easy-to-use tools built for modern Parivar management.</p>
-      </div>
-
-      <div class="feat-header-right">
-        <div class="feat-img-blob">
-          <!-- Community image background -->
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Community">
-        </div>
-        <div class="feat-stats-overlay">
-          <div class="fso-card">
-            <div class="fso-icon"><i class="bi bi-people-fill"></i></div>
-            <div>
-              <div class="fso-num">1,200+</div>
-              <div class="fso-lbl">Active Members</div>
-            </div>
-          </div>
-          <div class="fso-card">
-            <div class="fso-icon"><i class="bi bi-calendar-check-fill"></i></div>
-            <div>
-              <div class="fso-num">48</div>
-              <div class="fso-lbl">Events This Year</div>
-            </div>
-          </div>
-          <div class="fso-card">
-            <div class="fso-icon"><i class="bi bi-shop"></i></div>
-            <div>
-              <div class="fso-num">260+</div>
-              <div class="fso-lbl">Businesses Listed</div>
-            </div>
-          </div>
-          <div class="fso-card">
-            <div class="fso-icon"><i class="bi bi-star-fill"></i></div>
-            <div>
-              <div class="fso-num">4.9★</div>
-              <div class="fso-lbl">App Rating</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Feature Cards -->
-    <div class="feat-grid">
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-person-lines-fill"></i></div>
-        <h3>Member Directory</h3>
-        <p>Comprehensive profiles with name, business, phone, blood group, native place, and more for every family member.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> 1,200+ Profiles</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-building"></i></div>
-        <h3>Committee Members</h3>
-        <p>Know the driving force behind your community. Explore committee member profiles, roles, and contact info.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> 24 Members</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-shop-window"></i></div>
-        <h3>Business Directory</h3>
-        <p>Explore members' businesses including services, website, phone number, address, and more. Support your Parivar.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> 260+ Businesses</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-calendar-event-fill"></i></div>
-        <h3>Event Management</h3>
-        <p>Stay informed about upcoming family events and get-togethers with RSVP and push notifications.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> Live RSVP</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-hand-index-thumb-fill"></i></div>
-        <h3>Request Assistance</h3>
-        <p>Send request applications for emergencies like blood requirements or other urgent assistance needs.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> Instant Alerts</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-translate"></i></div>
-        <h3>Multi-Language</h3>
-        <p>Full support for English and Gujarati languages for seamless, inclusive community communication.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> 2 Languages</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-megaphone-fill"></i></div>
-        <h3>Advertisements</h3>
-        <p>Promote your business, products, and services to generate additional revenue within the community.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> Boost Reach</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-ico"><i class="bi bi-trophy-fill"></i></div>
-        <h3>Acknowledgment</h3>
-        <p>Recognize and celebrate student achievements — academic successes, extracurricular accomplishments, and more.</p>
-        <div class="feat-tag"><i class="bi bi-check-circle-fill"></i> Celebrate Success</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ── MEMBERS ── -->
-<section class="members-sec" id="members">
-  <div class="sec-max">
-    <div class="sec-head">
-      <div>
-        <!-- <div class="sec-badge">✦ Members</div> -->
-        <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-       Members
-      </div>
-        <h2 class="sec-title">Our <em>Community Members</em></h2>
-        <p class="sec-sub">Connect with fellow Parivar members across the community and build meaningful bonds.</p>
-      </div>
-      <a href="#" class="btn-link">View All Members <span class="arr">→</span></a>
-    </div>
-    <div class="members-grid">
-      <div class="mem-card reveal">
-        <div class="mem-av" style="position:relative"><i class="bi bi-person-badge"></i><div class="mem-av-ring"></div></div>
-        <div class="mem-name">Rajesh Patel</div>
-        <div class="mem-role"> Committee President</div>
-        <div class="mem-chips"><span class="chip">Business</span><span class="chip">Ahmedabad</span><span class="chip">B+</span></div>
-        <a href="#" class="mem-btn">Connect <span>→</span></a>
-      </div>
-      <div class="mem-card reveal">
-        <div class="mem-av" style="position:relative"><i class="bi bi-person-heart"></i><div class="mem-av-ring"></div></div>
-        <div class="mem-name">Priya Shah</div>
-        <div class="mem-role"> Health Coordinator</div>
-        <div class="mem-chips"><span class="chip">Doctor</span><span class="chip">Surat</span><span class="chip">O+</span></div>
-        <a href="#" class="mem-btn">Connect <span>→</span></a>
-      </div>
-      <div class="mem-card reveal">
-        <div class="mem-av" style="position:relative"><i class="bi bi-person-workspace"></i><div class="mem-av-ring"></div></div>
-        <div class="mem-name">Amit Desai</div>
-        <div class="mem-role">Tech Volunteer</div>
-        <div class="mem-chips"><span class="chip">IT</span><span class="chip">Vadodara</span><span class="chip">A+</span></div>
-        <a href="#" class="mem-btn">Connect <span>→</span></a>
-      </div>
-      <div class="mem-card reveal">
-        <div class="mem-av" style="position:relative"><i class="bi bi-mortarboard"></i><i class="bi bi-mortarboard"></i><div class="mem-av-ring"></div></div>
-        <div class="mem-name">Neha Joshi</div>
-        <div class="mem-role"> Youth Leader</div>
-        <div class="mem-chips"><span class="chip">Education</span><span class="chip">Rajkot</span><span class="chip">AB+</span></div>
-        <a href="#" class="mem-btn">Connect <span>→</span></a>
+      <div class="tb-right">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ═══════════════════════════════════════
-     SECTION 2: EVENTS
-═══════════════════════════════════════ -->
-<section class="events-sec" id="events">
-  <div class="sec-max">
-    <div class="sec-head">
-      <div class="sec-head-left">
-        <!-- <div class="sec-badge"></div> -->
-        <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-      EVENTS
+  <!-- NAVBAR -->
+  <nav class="snav">
+    <div class="nav-in">
+      <div class="nav-logo">
+        <img src="assets/img/parivar.me-Photoroom.png" />
+        <!-- <div class="nav-logo-ico"><i class="bi bi-house-heart-fill"></i></div>
+      <span class="nav-brand"><a href="#">Paneliya Parivar</a></span> -->
       </div>
-        <h2>Upcoming <em>Community Events</em></h2>
-        <p>Stay connected with your Parivar through celebrations, gatherings, and special occasions.</p>
-      </div>
-      <a href="#" class="btn-link">All Events <i class="bi bi-arrow-right"></i></a>
+      <ul class="nav-ul">
+        <li><a href="#"><i class="bi bi-house-door"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-info-circle"></i>About</a></li>
+        <li><a href="#feature"><i class="bi bi-people"></i>Feature</a></li>
+        <!-- <li><a href="#gallery"><i class="bi bi-images"></i>Gallery</a></li> -->
+        <!-- <li><a href="#events"><i class="bi bi-calendar-event"></i>Events</a></li> -->
+        <li><a href="#contact"><i class="bi bi-envelope"></i>Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-login"><i class="bi bi-box-arrow-in-right"></i>Inquiry Now</a>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <div class="events-grid">
+  <!-- MOBILE MENU OVERLAY + DRAWER -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-drawer">
+      <ul>
+        <li><a href="#" class="mob-link"><i class="bi bi-house-door"></i>Home</a></li>
+        <li><a href="#about" class="mob-link"><i class="bi bi-info-circle"></i>About</a></li>
+        <li><a href="#members" class="mob-link"><i class="bi bi-people"></i>Members</a></li>
+        <!-- <li><a href="#gallery" class="mob-link"><i class="bi bi-images"></i>Gallery</a></li> -->
+        <!-- <li><a href="#events" class="mob-link"><i class="bi bi-calendar-event"></i>Events</a></li> -->
+        <li><a href="#contact" class="mob-link"><i class="bi bi-envelope"></i>Contact</a></li>
+      </ul>
+      <a href="#contact" class="mobile-login mob-link"><i class="bi bi-box-arrow-in-right"></i>Inquiry Now</a>
+    </div>
+  </div>
+  <!-- HERO -->
+  <section class="hero bg-hero-gradient position-relative overflow-hidden">
+    <div class="grid-pattern"></div>
+    <div class="float-shape shape-1"></div>
+    <div class="float-shape shape-2"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge-pill glass shadow-card">
+            <i class="bi bi-stars text-accent"></i> Trusted by communities
+          </span>
+          <h1 class="hero-title mt-4">
+            Community Management <br class="d-none d-md-block" />
+            <span class="">At Your Fingertips</span>
+          </h1>
+          <p class=" text-muted-2 mt-3" style="max-width:560px">
+          parivar.me is a warm, modern platform built for samaj, parivar, and community organizations. Manage your members, plan events, preserve your heritage, and connect families — all in one beautifully crafted digital home.
 
-      <!-- Event 1 -->
+
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <!-- <a href="#register" class="btn btn-brand btn-lg shine pulse-ring d-inline-flex align-items-center gap-2">
+            Get Started <i class="bi bi-arrow-right"></i>
+          </a> -->
+            <a href="#contact" class="btn-solid"><i class="bi bi-heart-fill"></i>Get Started</a>
+            <!-- <a href="#features" class="btn btn-glass btn-lg d-inline-flex align-items-center gap-2">
+            <i class="bi bi-play-circle"></i> Explore
+          </a> -->
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-5">
+            <!-- <div class="d-flex avatar-stack">
+            <img src="assets/member-1.jpg" alt="" />
+            <img src="assets/member-2.jpg" alt="" />
+            <img src="assets/member-3.jpg" alt="" />
+            <img src="assets/member-4.jpg" alt="" />
+          </div> -->
+            <div>
+              <!-- <div class="text-warning small">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div> -->
+              <!-- <div class="small text-muted-2">Loved by 50,000+ members worldwide</div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center position-relative">
+          <div class="hero-glow"></div>
+          <img src="assets/mockup-home.png" alt="Parivar.me mobile app preview" class="img-fluid hero-mock" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="sg">
+        <div class="si">
+          <div class="si-ico"><i class="bi bi-people-fill"></i></div>
+          <div class="si-n">500+</div>
+          <div class="si-l">Communities</div>
+        </div>
+        <div class="si">
+          <div class="si-ico"><i class="bi bi-person-hearts"></i></div>
+          <div class="si-n">50K+</div>
+          <div class="si-l">Members</div>
+        </div>
+        <div class="si">
+          <div class="si-ico"><i class="bi bi-calendar-heart-fill"></i></div>
+          <div class="si-n">12K+</div>
+          <div class="si-l">Events Hosted</div>
+        </div>
+        <div class="si">
+          <div class="si-ico"><i class="bi bi-images"></i></div>
+          <div class="si-n">1M+</div>
+          <div class="si-l">Memories Shared</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about-sec" id="about">
+    <div class="container">
+      <div class="ag">
+        <div class="a-iw">
+          <img src="assets/img/parivar.png" alt="Parivar Community" />
+          <!-- <div class="a-badge"><span>50K+</span>Happy Members</div> -->
+        </div>
+        <div>
+          <div class="a-lbl"><i class="bi bi-house-heart-fill"></i> About Parivar</div>
+          <h2 class="a-title"> Built For Communities.<br />Designed For<span> Togetherness.</span></h2>
+          <p class="a-text"> Parivar is a powerful community management platform built for organizations,
+  groups, and networks to stay connected, organized, and engaged.</p>
+          <ul class="a-list">
+            <li><span class="chk"><i class="bi bi-check2"></i></span>Bring every generation onto one private space</li>
+            <li><span class="chk"><i class="bi bi-check2"></i></span>Plan events, share photos &amp; preserve memories
+            </li>
+            <li><span class="chk"><i class="bi bi-check2"></i></span>Designed with privacy &amp; warmth at its core</li>
+          </ul>
+          <a href="#contact" class="btn-solid"><i class="bi bi-heart-fill"></i>Join Parivar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="svc-sec" id="feature">
+    <div class="container">
+      <div class="sec-hd">
+        <div class="sec-tag">Our Feature</div>
+        <h2 class="sec-title">What We <span>Offer</span></h2>
+        <div class="div"></div>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <div class="svc-ico"><i class="bi bi-person-plus-fill"></i></div>
+          <div class="svc-t">Member Registration</div>
+          <p class="svc-d">Easy online registration for all Paneliya family members. Maintain a complete digital
+            directory with profiles and contact info.</p>
+          <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-ico"><i class="bi bi-calendar-check-fill"></i></div>
+          <div class="svc-t">Event Management</div>
+          <p class="svc-d">Organize and manage community events, milap, festivals, and gatherings. RSVP tracking and
+            announcements all in one place.</p>
+          <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-ico"><i class="bi bi-image-fill"></i></div>
+          <div class="svc-t">Photo Gallery</div>
+          <p class="svc-d">Share and preserve precious family memories. Upload photos from events and celebrations for
+            the entire community to cherish.</p>
+          <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-ico"><i class="bi bi-heart-pulse-fill"></i></div>
+          <div class="svc-t">Blood Donor Network</div>
+          <p class="svc-d">Connect with blood donors within the community in emergencies. A life-saving network with
+            up-to-date donor details.</p>
+          <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-ico"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="svc-t">Business Directory</div>
+          <p class="svc-d">Discover and support businesses run by Paneliya community members. A trusted directory for
+            local services and professionals.</p>
+          <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-ico"><i class="bi bi-newspaper"></i></div>
+          <div class="svc-t">News &amp; Updates</div>
+          <p class="svc-d">Stay informed with the latest community news, announcements, and important updates delivered
+            directly to members.</p>
+          <a href="#" class="svc-lnk">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="container">
+    <div class="sec-hd">
+      <div class="sec-tag">Upcoming Events</div>
+      <h2 class="sec-title">Moments Worth <span>Celebrating</span></h2>
+      <div class="div"></div>
+    </div>
+    <div class="ev-grid">
       <div class="ev-card">
-        <div class="ev-banner">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" alt="Annual Gathering">
-          <div class="ev-banner-overlay"></div>
-          <div class="ev-date-box">
-            <div class="ev-day">15</div>
-            <div class="ev-mon">MAY</div>
-          </div>
-          <div class="ev-live-tag">Registering</div>
-          <div class="ev-banner-info">
-            <div class="ev-emoji">🎉</div>
-            <div class="ev-banner-title">Parivar Annual Milap 2026</div>
-          </div>
+        <div class="ev-img">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80&fit=crop"
+            alt="Annual Milap" />
+          <div class="ev-db"><strong>15</strong><span>MAY</span></div>
+          <div class="ev-sb">REGISTERING</div>
+          <div class="ev-ot"><i class="bi bi-stars"></i> Annual Milap 2026</div>
         </div>
         <div class="ev-body">
-          <div class="ev-type-row">
-            <div class="ev-type">Annual Gathering</div>
-            <div class="ev-attendees"><i class="bi bi-people-fill" style="color:var(--g4)"></i> 500+ Members</div>
+          <div class="ev-tr">
+            <span class="etag"><i class="bi bi-people-fill"></i> Family Reunion</span>
+            <span class="eusers"><i class="bi bi-people-fill"></i> 2,000+</span>
           </div>
-          <div class="ev-title">Parivar Annual Milap 2026</div>
-          <div class="ev-details">
-            <div class="ev-detail-row"><i class="bi bi-geo-alt-fill"></i> Ahmedabad Community Hall</div>
-            <div class="ev-detail-row"><i class="bi bi-clock-fill"></i> 10:00 AM – 8:00 PM</div>
-            <div class="ev-detail-row"><i class="bi bi-calendar3"></i> Saturday, 15 May 2026</div>
-          </div>
-          <div class="ev-footer">
-            <button class="ev-register-btn"><i class="bi bi-check2-circle"></i> Register Now</button>
-            <div class="ev-price">Entry: <span>Free</span></div>
+          <div class="ev-t">Paneliya Annual Milap &amp; Cultural Festival</div>
+          <ul class="ev-meta">
+            <li><i class="bi bi-geo-alt-fill"></i>Paneliya Samaj Hall, Ahmedabad</li>
+            <li><i class="bi bi-clock-fill"></i>10:00 AM – 9:00 PM</li>
+            <li><i class="bi bi-calendar-event-fill"></i>Saturday, 15 May 2026</li>
+          </ul>
+          <div class="ev-ft">
+            <a href="#" class="btn-reg"><i class="bi bi-check-circle-fill"></i>Register Now</a>
+            <span class="ev-price">Entry: <b>Free</b></span>
           </div>
         </div>
       </div>
-
-      <!-- Event 2 -->
       <div class="ev-card">
-        <div class="ev-banner">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" alt="Cricket Tournament">
-          <div class="ev-banner-overlay"></div>
-          <div class="ev-date-box">
-            <div class="ev-day">28</div>
-            <div class="ev-mon">MAY</div>
-          </div>
-          <div class="ev-banner-info">
-            <div class="ev-emoji">🏏</div>
-            <div class="ev-banner-title">Parivar Cricket Tournament</div>
-          </div>
+        <div class="ev-img">
+          <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=600&q=80&fit=crop"
+            alt="Diwali Night" />
+          <div class="ev-db"><strong>20</strong><span>OCT</span></div>
+          <div class="ev-sb">REGISTERING</div>
+          <div class="ev-ot"><i class="bi bi-stars"></i> Diwali Night 2026</div>
         </div>
         <div class="ev-body">
-          <div class="ev-type-row">
-            <div class="ev-type">Sports</div>
-            <div class="ev-attendees"><i class="bi bi-people-fill" style="color:var(--g4)"></i> 120 Players</div>
+          <div class="ev-tr">
+            <span class="etag"><i class="bi bi-stars"></i> Diwali Night</span>
+            <span class="eusers"><i class="bi bi-people-fill"></i> 1,500+</span>
           </div>
-          <div class="ev-title">Parivar Cricket Tournament</div>
-          <div class="ev-details">
-            <div class="ev-detail-row"><i class="bi bi-geo-alt-fill"></i> Surat Cricket Ground</div>
-            <div class="ev-detail-row"><i class="bi bi-clock-fill"></i> 7:00 AM – 6:00 PM</div>
-            <div class="ev-detail-row"><i class="bi bi-calendar3"></i> Wednesday, 28 May 2026</div>
-          </div>
-          <div class="ev-footer">
-            <button class="ev-register-btn"><i class="bi bi-check2-circle"></i> Register Team</button>
-            <div class="ev-price">Entry: <span>₹200</span></div>
+          <div class="ev-t">Grand Diwali Community Night &amp; Celebration</div>
+          <ul class="ev-meta">
+            <li><i class="bi bi-geo-alt-fill"></i>Paneliya Samaj Hall, Surat</li>
+            <li><i class="bi bi-clock-fill"></i>6:00 PM – 11:00 PM</li>
+            <li><i class="bi bi-calendar-event-fill"></i>Monday, 20 Oct 2026</li>
+          </ul>
+          <div class="ev-ft">
+            <a href="#" class="btn-reg"><i class="bi bi-check-circle-fill"></i>Register Now</a>
+            <span class="ev-price">Entry: <b>Free</b></span>
           </div>
         </div>
       </div>
-
-      <!-- Event 3 -->
       <div class="ev-card">
-        <div class="ev-banner">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" alt="Scholarship Ceremony">
-          <div class="ev-banner-overlay"></div>
-          <div class="ev-date-box">
-            <div class="ev-day">10</div>
-            <div class="ev-mon">JUN</div>
-          </div>
-          <div class="ev-banner-info">
-            <div class="ev-emoji">🎓</div>
-            <div class="ev-banner-title">Scholarship Award Ceremony</div>
-          </div>
+        <div class="ev-img">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80&fit=crop"
+            alt="Family Reunion" />
+          <div class="ev-db"><strong>12</strong><span>JAN</span></div>
+          <div class="ev-ot"><i class="bi bi-stars"></i> Family Reunion 2027</div>
         </div>
         <div class="ev-body">
-          <div class="ev-type-row">
-            <div class="ev-type">Education</div>
-            <div class="ev-attendees"><i class="bi bi-people-fill" style="color:var(--g4)"></i> 200 Students</div>
+          <div class="ev-tr">
+            <span class="etag"><i class="bi bi-house-heart"></i> Family Reunion</span>
+            <span class="eusers"><i class="bi bi-people-fill"></i> 3,000+</span>
           </div>
-          <div class="ev-title">Scholarship Award Ceremony</div>
-          <div class="ev-details">
-            <div class="ev-detail-row"><i class="bi bi-geo-alt-fill"></i> Vadodara Convention Centre</div>
-            <div class="ev-detail-row"><i class="bi bi-clock-fill"></i> 3:00 PM – 7:00 PM</div>
-            <div class="ev-detail-row"><i class="bi bi-calendar3"></i> Tuesday, 10 Jun 2026</div>
+          <div class="ev-t">Paneliya Annual Family Reunion &amp; Gathering</div>
+          <ul class="ev-meta">
+            <li><i class="bi bi-geo-alt-fill"></i>Paneliya Samaj Hall, Vadodara</li>
+            <li><i class="bi bi-clock-fill"></i>9:00 AM – 8:00 PM</li>
+            <li><i class="bi bi-calendar-event-fill"></i>Tuesday, 12 Jan 2027</li>
+          </ul>
+          <div class="ev-ft">
+            <a href="#" class="btn-reg"><i class="bi bi-check-circle-fill"></i>Register Now</a>
+            <span class="ev-price">Entry: <b>Free</b></span>
           </div>
-          <div class="ev-footer">
-            <button class="ev-register-btn"><i class="bi bi-check2-circle"></i> Apply Now</button>
-            <div class="ev-price">Entry: <span>Free</span></div>
-          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ── GALLERY ── -->
-
-<section class="gallery-new-sec" id="gallery">
-  <div class="sec-max">
-    <div class="sec-head-center">
-      <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-    Memories
-      </div>
-      <!-- <div class="sec-badge">✦ </div> -->
-      <h2 class="sec-title">From our <em>Gallery</em></h2>
-      <p class="sec-sub">Moments captured from celebrations, gatherings, and milestones across our Parivar.</p>
-    </div>
-
-    <div class="gallery-filter-row">
-      <button class="gfilt active" onclick="setGFilter(this)">All</button>
-      <button class="gfilt" onclick="setGFilter(this)">Festivals</button>
-      <button class="gfilt" onclick="setGFilter(this)">Sports</button>
-      <button class="gfilt" onclick="setGFilter(this)">Cultural</button>
-      <button class="gfilt" onclick="setGFilter(this)">Annual Day</button>
-    </div>
-    
-
-    <!-- Screenshot 1 exact layout: big left + right column (2 tall + 2 small) -->
-    <div class="gallery-new-grid">
-
-      <!-- Big item left - Diwali -->
-      <div class="gal-new-item gal-big reveal"
-           style="background-image:url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&auto=format&fit=crop&q=80')">
-        <div class="gal-new-overlay">
-          <div class="gal-new-cap">Diwali 2024</div>
-          <div class="gal-new-cnt"><i class="bi bi-camera"></i> 210 photos</div>
-        </div>
-        <button class="gal-view-btn">VIEW</button>
-      </div>
-
-      <!-- Right column top - Annual Day -->
-      <div class="gal-new-item gal-top-right reveal"
-           style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=80')">
-        <div class="gal-new-overlay">
-          <div class="gal-new-cap">Annual Day</div>
-          <div class="gal-new-cnt"><i class="bi bi-camera"></i> 89 photos</div>
-        </div>
-        <button class="gal-view-btn">VIEW</button>
-      </div>
-
-      <!-- Right bottom row: Holi + Sports -->
-      <div class="gal-new-item gal-sm reveal"
-           style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=80')">
-        <div class="gal-new-overlay">
-          <div class="gal-new-cap">Holi Celebration</div>
-          <div class="gal-new-cnt"><i class="bi bi-camera"></i> 124 photos</div>
-        </div>
-        <button class="gal-view-btn">VIEW</button>
-      </div>
-      <div class="gal-new-item gal-sm reveal"
-           style="background-image:url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&auto=format&fit=crop&q=80')">
-        <div class="gal-new-overlay">
-          <div class="gal-new-cap">Sports Meet</div>
-          <div class="gal-new-cnt"><i class="bi bi-camera"></i> 156 photos</div>
-        </div>
-        <button class="gal-view-btn">VIEW</button>
-      </div>
-
-      <!-- Bottom row: Cultural Night + Choir Drive -->
-      <div class="gal-new-item gal-bot reveal"
-           style="background-image:url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&auto=format&fit=crop&q=80')">
-        <div class="gal-new-overlay">
-          <div class="gal-new-cap">Cultural Night</div>
-          <div class="gal-new-cnt"><i class="bi bi-camera"></i> 156 photos</div>
-        </div>
-        <button class="gal-view-btn">VIEW</button>
-      </div>
-      <div class="gal-new-item gal-bot reveal"
-           style="background-image:url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&auto=format&fit=crop&q=80')">
-        <div class="gal-new-overlay">
-          <div class="gal-new-cap">Choir Drive</div>
-          <div class="gal-new-cnt"><i class="bi bi-camera"></i> 89 photos</div>
-        </div>
-        <button class="gal-view-btn">VIEW</button>
       </div>
     </div>
+  </div> -->
 
-    <div class="gallery-cta">
-      <a href="#" class="btn-primary" style="display:inline-flex"> Browse Full Gallery </a>
-    </div>
-  </div>
-</section>
-<!-- ── FUND ── -->
-<section class="fund-sec" id="fund">
-  <div class="sec-max">
-    <div class="fund-grid">
-      <div class="fund-left reveal">
-        <!-- <div class="sec-badge">✦ </div> -->
-        <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-       Fund & Donations
-      </div>
-        <h2>Support Our<br><em>Community Together</em></h2>
-        <p>Your contributions help organise events, support students with scholarships, assist members during medical emergencies, and build a stronger Parivar for future generations.</p>
-        
 
-        <div class="hero-kpis">
-        <div class="hero-kpi">
-          <div class="hero-kpi-num" data-count="500">₹42L+</div>
-          <div class="hero-kpi-lbl">Collected</div>
-        </div>
-        <div class="hero-kpi">
-          <div class="hero-kpi-num" data-count="50000">1,200+</div>
-          <div class="hero-kpi-lbl">Donors</div>
-        </div>
-        <div class="hero-kpi">
-          <div class="hero-kpi-num" data-count="10000">85+</div>
-          <div class="hero-kpi-lbl">Families Helped</div>
-        </div>
-      </div>
-        <a href="#" class="btn-primary donate-btn">Donate Now</a>
-      </div>
-      <div class="fund-right">
-        <div class="fund-card reveal">
-          <div class="fc-top">
-            <div style="display:flex;gap:12px;align-items:flex-start">
-              <div class="fc-icon"><i class="bi bi-mortarboard"></i></div>
-              <div><div class="fc-label">Education Fund 2026</div><div class="fc-desc">Scholarships for deserving students</div></div>
+  <!-- CONTACT -->
+  <section class="ct-sec" id="contact">
+    <div class="container">
+      <div class="ct-box">
+        <div class="ct-left">
+          <div
+            style="font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--background-bg);margin-bottom:10px">
+            <i class="bi bi-chat-heart-fill"></i> Get In Touch</div>
+          <h2>Let's Create Something <span>Powerful</span></h2>
+          <p>We help communities connect, grow, and scale digitally with beautiful experiences.</p>
+          <div class="ct-feats">
+            <div class="cft">
+              <div class="cft-ico"><i class="bi bi-lightning-charge-fill"></i></div>Fast Response
             </div>
-            <div class="fc-amount">₹8.5L</div>
-          </div>
-          <div class="fc-bar"><div class="fc-fill" style="width:72%"></div></div>
-          <div class="fc-meta"><span>72% funded</span><span>Goal: ₹12L</span></div>
-        </div>
-        <div class="fund-card reveal">
-          <div class="fc-top">
-            <div style="display:flex;gap:12px;align-items:flex-start">
-              <div class="fc-icon"><i class="bi bi-hospital"></i></div>
-              <div><div class="fc-label">Medical Emergency Fund</div><div class="fc-desc">Support for members in need</div></div>
+            <div class="cft">
+              <div class="cft-ico"><i class="bi bi-people-fill"></i></div>Friendly Support
             </div>
-            <div class="fc-amount">₹5.2L</div>
-          </div>
-          <div class="fc-bar"><div class="fc-fill" style="width:52%"></div></div>
-          <div class="fc-meta"><span>52% funded</span><span>Goal: ₹10L</span></div>
-        </div>
-        <div class="fund-card reveal">
-          <div class="fc-top">
-            <div style="display:flex;gap:12px;align-items:flex-start">
-              <div class="fc-icon"><i class="bi bi-calendar-event"></i></div>
-              <div><div class="fc-label">Annual Milap 2026</div><div class="fc-desc">Community gathering expenses</div></div>
-            </div>
-            <div class="fc-amount">₹3.1L</div>
-          </div>
-          <div class="fc-bar"><div class="fc-fill" style="width:89%"></div></div>
-          <div class="fc-meta"><span>89% funded</span><span>Goal: ₹3.5L</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- ── REGISTER YOUR PARIVAR ── -->
-<!-- <section class="register-sec" id="register">
-  <div class="register-inner">
-    <div class="register-grid">
-      <div class="register-left reveal">
-        <div class="sec-badge">✦ Get Started</div>
-        <h2>Register Your<br><em>Parivar</em> Today</h2>
-        <p>Bring your entire community online in minutes. No technical expertise needed — our team will guide you through every step.</p>
-        <div class="register-steps">
-          <div class="rstep">
-            <div class="rstep-num">1</div>
-            <div><div class="rstep-t">Fill the Registration Form</div><div class="rstep-s">Tell us about your community — name, size, and contact details.</div></div>
-          </div>
-          <div class="rstep">
-            <div class="rstep-num">2</div>
-            <div><div class="rstep-t">Choose Your Plan</div><div class="rstep-s">Pick the plan that fits your community's size and needs.</div></div>
-          </div>
-          <div class="rstep">
-            <div class="rstep-num">3</div>
-            <div><div class="rstep-t">Get Onboarded</div><div class="rstep-s">Our team sets up your Parivar app and trains your admin within 24 hours.</div></div>
-          </div>
-          <div class="rstep">
-            <div class="rstep-num">4</div>
-            <div><div class="rstep-t">Invite Your Members</div><div class="rstep-s">Share a link and watch your community connect and thrive.</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="register-form-card reveal">
-        <h3>Register Your Parivar</h3>
-        <p class="rfc-sub">Free setup · Dedicated support · Launch in 24 hours</p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
-          <div class="cf-group" style="margin-bottom:0"><label>Parivar Name *</label><input type="text" placeholder="e.g. Patel Parivar"></div>
-          <div class="cf-group" style="margin-bottom:0"><label>Community Size *</label>
-            <select>
-              <option>50–200 Members</option>
-              <option>200–500 Members</option>
-              <option>500–1000 Members</option>
-              <option>1000+ Members</option>
-            </select>
-          </div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
-          <div class="cf-group" style="margin-bottom:0"><label>Admin Name *</label><input type="text" placeholder="Your full name"></div>
-          <div class="cf-group" style="margin-bottom:0"><label>Mobile Number *</label><input type="tel" placeholder="+91 98765 43210"></div>
-        </div>
-        <div class="cf-group"><label>Email Address *</label><input type="email" placeholder="admin@yourparivar.com"></div>
-        <div class="cf-group" style="margin-bottom:8px"><label>City / District</label><input type="text" placeholder="e.g. Ahmedabad, Surat, Vadodara"></div>
-        <div style="font-size:.8rem;font-weight:700;color:var(--text2);margin-bottom:10px">Choose Plan</div>
-        <div class="register-plans">
-          <div class="rplan" onclick="selectPlan(this)">
-            <div class="rplan-name">⚡ Starter</div>
-            <div class="rplan-price">₹2,999<span style="font-size:.7rem;font-weight:400;color:var(--text3)">/yr</span></div>
-            <div class="rplan-members">Up to 300 members</div>
-          </div>
-          <div class="rplan selected" onclick="selectPlan(this)">
-            <div class="rplan-badge">Popular</div>
-            <div class="rplan-name">🌟 Community</div>
-            <div class="rplan-price">₹5,999<span style="font-size:.7rem;font-weight:400;color:var(--text3)">/yr</span></div>
-            <div class="rplan-members">Up to 1000 members</div>
-          </div>
-          <div class="rplan" onclick="selectPlan(this)">
-            <div class="rplan-name">🏆 Professional</div>
-            <div class="rplan-price">₹9,999<span style="font-size:.7rem;font-weight:400;color:var(--text3)">/yr</span></div>
-            <div class="rplan-members">Unlimited members</div>
-          </div>
-          <div class="rplan" onclick="selectPlan(this)">
-            <div class="rplan-name">🤝 Enterprise</div>
-            <div class="rplan-price">Custom</div>
-            <div class="rplan-members">Multiple communities</div>
-          </div>
-        </div>
-        <button class="rf-submit" onclick="handleRegister(this)">🚀 Register My Parivar</button>
-        <p class="rf-note">✅ Free 14-day trial · No credit card required · Cancel anytime</p>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- ── CONTACT ── -->
-<section class="contact-sec" id="contact-us">
-  <div class="contact-inner">
-    <div style="text-align:center;margin-bottom:56px">
-      <!-- <div class="sec-badge" style="display:inline-flex">✦ </div> -->
-      <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-      Contact Us
-      </div>
-      <h2 class="sec-title" >Get in <em>Touch</em></h2>
-      <p class="sec-sub">Have questions? Our team is here to help you every step of the way.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-left reveal">
-        <h2>We'd Love to <em>Hear From You</em></h2>
-        <p>Whether you need help registering your community, have a technical question, or simply want to explore how My Parivar can help — reach out anytime.</p>
-        <div class="contact-info-cards">
-          <div class="cic">
-            <div class="cic-ico"><i class="bi bi-envelope"></i></div>
-            <div>
-              <div class="cic-label">Email Us</div>
-              <div class="cic-val">myparivarapp@gmail.com</div>
+            <div class="cft">
+              <div class="cft-ico"><i class="bi bi-gift-fill"></i></div>Free Setup
             </div>
           </div>
-          <div class="cic">
-            <div class="cic-ico"><i class="bi bi-telephone"></i></div>
-            <div>
-              <div class="cic-label">Call Us</div>
-              <div class="cic-val">+91 98765 43210</div>
-            </div>
-          </div>
-          <div class="cic">
-            <div class="cic-ico"><i class="bi bi-geo-alt"></i></div>
-            <div>
-              <div class="cic-label">Our Office</div>
-              <div class="cic-val">407, Maruti Plaza, Nr. Vijay Park BRTS, Krishna Nagar Rd, Naroda, Ahmedabad – 382350, Gujarat</div>
-            </div>
-          </div>
-          <div class="cic">
-            <div class="cic-ico"><i class="bi bi-clock"></i></div>
-            <div>
-              <div class="cic-label">Support Hours</div>
-              <div class="cic-val">Mon – Sat, 9:00 AM to 7:00 PM IST</div>
-            </div>
+          <div class="ct-soc">
+            <a href="#" class="csoc"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="csoc"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="csoc"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="csoc"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="csoc"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
-      </div>
-      <div class="contact-form-card reveal">
-        <h3>Send Us a Message</h3>
-        <p>We typically respond within a few hours during business hours.</p>
-        <div class="cf-row">
-          <div class="cf-group"><label>Your Name *</label><input type="text" placeholder="Rajesh Patel"></div>
-          <div class="cf-group"><label>Mobile *</label><input type="tel" placeholder="+91 98765 43210"></div>
-        </div>
-        <div class="cf-group"><label>Email Address *</label><input type="email" placeholder="you@example.com"></div>
-        <div class="cf-group">
-          <label>Subject</label>
-          <select>
-            <option>General Enquiry</option>
-            <option>Register My Parivar</option>
-            <option>Technical Support</option>
-            <option>Pricing & Plans</option>
-            <option>Partnership</option>
-          </select>
-        </div>
-        <div class="cf-group"><label>Message *</label><textarea placeholder="Tell us how we can help..."></textarea></div>
-        <button class="cf-submit" onclick="handleContact(this)"><i class="bi bi-send"></i> Send Message</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<!-- ═══════════════════════════════════════
-     SECTION 3: LATEST ANNOUNCEMENTS
-═══════════════════════════════════════ -->
-<section class="notices-sec">
-  <div class="sec-max">
-    <div class="sec-head">
-      <div class="sec-head-left">
-        <!-- <div class="sec-badge"></div> -->
-        <div class="hero-pill">
-        <span class="hero-pill-dot"></span>
-       NOTICE BOARD
-      </div>
-        <h2>Latest <em>Announcements</em></h2>
-        <p>Stay informed with important updates from your community leadership.</p>
-      </div>
-      <a href="#" class="btn-link">All Notices <i class="bi bi-arrow-right"></i></a>
-    </div>
-
-    <div class="notices-grid">
-
-      <!-- Notice 1: Urgent -->
-      <div class="notice-card urgent">
-        <div class="notice-img-band">
-          <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=600&q=80" alt="Blood Donation">
-          <div class="notice-img-band-overlay">
-            <div class="nib-tag"><i class="bi bi-exclamation-triangle-fill"></i> URGENT</div>
+        <div class="ct-right">
+          <h3>Send Message</h3>
+          <p>We typically respond within a few hours.</p>
+          <div class="ft-tabs">
+            <button class="active">Join</button>
+            <button>Enquiry</button>
+            <button>RSVP</button>
           </div>
-        </div>
-        <div class="notice-top">
-          <div class="ntag urg"><i class="bi bi-exclamation-circle-fill"></i> Urgent</div>
-          <div class="ndate">Apr 25, 2026</div>
-        </div>
-        <h3>Blood Donation Drive – Immediate Need</h3>
-        <p>We urgently need O- blood donors for a community member's surgery. Please contact the health coordinator immediately if you can help.</p>
-        <div class="notice-footer">
-          <a href="#" class="notice-read-more">Read more <i class="bi bi-arrow-right"></i></a>
-          <div class="notice-author">
-            <div class="nav-av">🏥</div>
-            <div class="nav-av-name">Health Committee</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Notice 2: Info -->
-      <div class="notice-card info">
-        <div class="notice-img-band">
-          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="App Update">
-          <div class="notice-img-band-overlay">
-            <div class="nib-tag"><i class="bi bi-info-circle-fill"></i> INFO</div>
-          </div>
-        </div>
-        <div class="notice-top">
-          <div class="ntag inf"><i class="bi bi-info-circle-fill"></i> Info</div>
-          <div class="ndate">Apr 22, 2026</div>
-        </div>
-        <h3>New App Update – Version 3.2 Released</h3>
-        <p>My Parivar app has been updated with enhanced privacy controls, improved gallery, and multi-language support improvements.</p>
-        <div class="notice-footer">
-          <a href="#" class="notice-read-more">Read more <i class="bi bi-arrow-right"></i></a>
-          <div class="notice-author">
-            <div class="nav-av">💻</div>
-            <div class="nav-av-name">Tech Team</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Notice 3: Event -->
-      <div class="notice-card event">
-        <div class="notice-img-band">
-          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80" alt="Annual Milap">
-          <div class="notice-img-band-overlay">
-            <div class="nib-tag"><i class="bi bi-calendar-event-fill"></i> EVENT</div>
-          </div>
-        </div>
-        <div class="notice-top">
-          <div class="ntag evt"><i class="bi bi-calendar-event-fill"></i> Event</div>
-          <div class="ndate">Apr 20, 2026</div>
-        </div>
-        <h3>Registration Open – Annual Milap 2026</h3>
-        <p>Registrations are now open for the Annual Parivar Milap. Early bird discount available until May 1st. Register through the app now.</p>
-        <div class="notice-footer">
-          <a href="#" class="notice-read-more">Read more <i class="bi bi-arrow-right"></i></a>
-          <div class="notice-author">
-            <div class="nav-av">🎉</div>
-            <div class="nav-av-name">Event Committee</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Notice 4: General -->
-      <div class="notice-card general">
-        <div class="notice-img-band">
-          <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80" alt="Scholarship">
-          <div class="notice-img-band-overlay">
-            <div class="nib-tag"><i class="bi bi-mortarboard-fill"></i> GENERAL</div>
-          </div>
-        </div>
-        <div class="notice-top">
-          <div class="ntag gen"><i class="bi bi-mortarboard-fill"></i> General</div>
-          <div class="ndate">Apr 18, 2026</div>
-        </div>
-        <h3>Scholarship Applications Now Open</h3>
-        <p>Students pursuing higher education can apply for the Parivar scholarship fund. Applications close May 15th. Check eligibility in app.</p>
-        <div class="notice-footer">
-          <a href="#" class="notice-read-more">Read more <i class="bi bi-arrow-right"></i></a>
-          <div class="notice-author">
-            <div class="nav-av">📚</div>
-            <div class="nav-av-name">Education Trust</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- ── CLIENTS ── -->
-<div class="clients-sec">
-  <div class="clients-title">Trusted by Communities Across Gujarat</div>
-  <!-- <h2 class="sec-title" style="margin-top:14px">Trusted by Communities  <em>Across Gujarat</em></h2> -->
-  <div class="clients-track-wrap">
-    <div class="clients-track">
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <!-- duplicate for seamless loop -->
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-      <div class="client-logo"><img src="assets/img/client-2-7ba3b00e.svg"/></div>
-    </div>
-  </div>
-</div>
-
-<!-- ── CTA ── -->
-<div class="cta-strip">
-  <h2>Join Your <em>Parivar</em> Today</h2>
-  <p>Download My Parivar app and stay connected with your community — anytime, anywhere.</p>
-  <div class="cta-btns">
-    <a href="#" class="btn-dl btn-dl-dark">
-      <!-- <span class="dl-icon">🤖</span> -->
-      <span class="dl-text">
-        <span class="dl-sub">Download on</span>
-        <span class="dl-main">Google Play</span>
-      </span>
-    </a>
-    <a href="#" class="btn-dl btn-dl-green">
-      <!-- <span class="dl-icon">🍎</span> -->
-      <span class="dl-text">
-        <span class="dl-sub">Download on</span>
-        <span class="dl-main">Apple App Store</span>
-      </span>
-    </a>
-  </div>
-</div>
-
-<!-- ── FOOTER ── -->
-<!-- <footer id="footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="foot-logo">
-          <div class="nav-logo-mark">🌿</div>
-          My Parivar
-        </a>
-        <p>Community management app designed to bring together and unite all Parivar family members under one digital roof, fostering connections and mutual support.</p>
-        <div class="fsocial">
-          <a href="#" class="fsoc-btn">📘</a>
-          <a href="#" class="fsoc-btn">📸</a>
-          <a href="#" class="fsoc-btn">🐦</a>
-          <a href="#" class="fsoc-btn">▶️</a>
-        </div>
-      </div>
-      <div class="fcol">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">→ Home</a></li>
-          <li><a href="#features">→ Features</a></li>
-          <li><a href="#members">→ Members</a></li>
-          <li><a href="#events">→ Events</a></li>
-          <li><a href="#gallery">→ Gallery</a></li>
-          <li><a href="#about">→ About Us</a></li>
-          <li><a href="#register">→ Register Parivar</a></li>
-          <li><a href="#contact-us">→ Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="fcol">
-        <h4>Features</h4>
-        <ul>
-          <li><a href="#">→ Member Directory</a></li>
-          <li><a href="#">→ Business Directory</a></li>
-          <li><a href="#">→ Event Management</a></li>
-          <li><a href="#">→ Notice Board</a></li>
-          <li><a href="#">→ Fund Management</a></li>
-          <li><a href="#">→ Photo Gallery</a></li>
-        </ul>
-      </div>
-      <div class="fcol">
-        <h4>Contact Us</h4>
-        <div class="fcontact">
-          <div class="fci"><span class="fci-ico">📧</span> myparivarapp@gmail.com</div>
-          <div class="fci"><span class="fci-ico">📍</span> 407, Maruti Plaza, Nr. Vijay Park BRTS, Krishna Nagar Rd, Naroda, Ahmedabad – 382350, Gujarat, India</div>
-          <div class="fci"><span class="fci-ico">📞</span> +91 98765 43210</div>
+          <form id="cForm">
+            <div class="fg"><input type="text" required /><label>Your Name</label></div>
+            <div class="fg"><input type="email" required /><label>Email Address</label></div>
+            <div class="fg"><textarea required></textarea><label>Your Message</label></div>
+            <button class="btn-send" type="submit"><i class="bi bi-send-fill"></i>Send Message</button>
+          </form>
+          <div class="succ" id="succ"><i class="bi bi-check-circle-fill"></i> Message sent successfully!</div>
         </div>
       </div>
     </div>
-    <hr class="fdiv">
-    <div class="fbot">
-      <span>Copyright © 2026 My Parivar. All rights reserved.</span>
-      <div class="fbot-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Refund Policy</a>
+  </section>
+
+  <!-- FOOTER — only --deep bg color -->
+  <footer>
+    <div class="container">
+      <div class="fg-grid">
+        <div>
+          <div class="fl-brand">
+            <img src="assets/img/Gemini_Generated_Image_ho1ef9ho1ef9ho1e-Photoroom.png" />
+            <!-- <i class="bi bi-house-heart-fill"></i>
+          Paneliya Parivar -->
+          </div>
+          <p class="fl-desc">A warm, modern home for families and communities — where every member matters and every
+            memory is preserved for generations.</p>
+          <div class="fl-soc">
+            <a href="#" class="fsoc"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fsoc"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fsoc"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="fsoc"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="fsoc"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="fh">Quick Links</div>
+          <ul class="fl-ul">
+            <li><a href="#about"><i class="bi bi-chevron-right"></i>About Us</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i>Services</a></li>
+            <li><a href="#members"><i class="bi bi-chevron-right"></i>Members</a></li>
+            <li><a href="#events"><i class="bi bi-chevron-right"></i>Events</a></li>
+            <li><a href="#gallery"><i class="bi bi-chevron-right"></i>Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fh">Services</div>
+          <ul class="fl-ul">
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Registration</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Blood Donors</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Business Directory</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>News &amp; Updates</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fh">Stay In The Loop</div>
+          <p class="fn-p">Get community stories and product updates — once a month, never spammy.</p>
+          <div class="fin">
+            <input type="email" placeholder="you@email.com" />
+            <button><i class="bi bi-send-fill"></i> Join</button>
+          </div>
+          <div class="fct">
+            <span><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210"> +91 98765 43210</a> </span>
+            <span><i class="bi bi-envelope-fill"></i><a href="mailto:info@paneliyaparivar.org">
+                info@paneliyaparivar.org</a></span>
+            <span><i class="bi bi-geo-alt-fill"></i> <a href="https://maps.app.goo.gl/DjHjwa86XLG4xgLg6"> Surat,
+                Gujarat, India</a> </span>
+          </div>
+        </div>
+      </div>
+      <div class="fb">
+        <p>© 2026 Paneliya Parivar. All rights reserved.</p>
+        <div><a href="#">Privacy</a><a href="#">Terms</a></div>
       </div>
     </div>
-  </div>
-</footer> -->
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  /* Custom cursor */
-  const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursorRing');
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    setTimeout(() => {
-      ring.style.left = e.clientX + 'px';
-      ring.style.top = e.clientY + 'px';
-    }, 80);
-  });
-  document.querySelectorAll('a, button, .feat-card, .mem-card, .ev-card').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.width = '20px';
-      cursor.style.height = '20px';
-      cursor.style.background = '#F9A825';
-      ring.style.width = '50px';
-      ring.style.height = '50px';
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.hslide'),
+        thumbs = document.querySelectorAll('.hthumb'),
+        pf = document.getElementById('hpf'),
+        cur_el = document.getElementById('hCur');
+      const DUR = 5500; let cur = 0, elapsed = 0;
+      function go(n) {
+        slides[cur].classList.remove('on'); thumbs[cur].classList.remove('on');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('on'); thumbs[cur].classList.add('on');
+        cur_el.textContent = String(cur + 1).padStart(2, '0');
+        elapsed = 0; pf.style.width = '0%';
+      }
+      function tick() {
+        elapsed += 16; pf.style.width = Math.min(elapsed / DUR * 100, 100) + '%';
+        if (elapsed >= DUR) go(cur + 1);
+        requestAnimationFrame(tick);
+      }
+      document.getElementById('hPrev').onclick = () => go(cur - 1);
+      document.getElementById('hNext').onclick = () => go(cur + 1);
+      thumbs.forEach(t => t.onclick = () => go(+t.dataset.tidx));
+      requestAnimationFrame(tick);
+    })();
+
+    document.querySelectorAll('.gf button').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('.gf button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.gi').forEach(item => {
+          item.classList.toggle('hide', f !== 'all' && item.dataset.category !== f);
+        });
+      };
     });
-    el.addEventListener('mouseleave', () => {
-      cursor.style.width = '12px';
-      cursor.style.height = '12px';
-      cursor.style.background = 'var(--g4)';
-      ring.style.width = '36px';
-      ring.style.height = '36px';
+
+    document.querySelectorAll('.gi').forEach(item => {
+      item.onclick = () => {
+        const src = item.querySelector('img').src;
+        const d = document.createElement('div');
+        d.style = 'position:fixed;inset:0;background:rgba(0,0,0,0.92);display:flex;align-items:center;justify-content:center;z-index:9999;cursor:pointer';
+        d.innerHTML = `<img src="${src}" style="max-width:90%;max-height:90%;border-radius:6px"/>`;
+        d.onclick = () => d.remove();
+        document.body.appendChild(d);
+      };
     });
-  });
 
-  /* Sticky nav */
-  window.addEventListener('scroll', () => {
-    document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 40);
-  });
+    document.querySelectorAll('.ft-tabs button').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('.ft-tabs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      };
+    });
 
-  /* Mobile nav */
-  function toggleNav() {
-    const links = document.querySelector('.nav-links');
-    const ctas = document.querySelector('.nav-ctas');
-    const open = links.style.display === 'flex';
-    if (open) {
-      links.style.display = '';
-      ctas.style.display = '';
-    } else {
-      links.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:90px;left:24px;right:24px;background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);padding:24px;gap:16px;border-radius:16px;box-shadow:0 16px 48px rgba(10,31,10,0.15);z-index:800;border:1px solid rgba(102,187,106,0.2);';
-      ctas.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:300px;left:24px;right:24px;background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);padding:16px 24px 24px;gap:10px;border-radius:16px;box-shadow:0 16px 48px rgba(10,31,10,0.15);z-index:800;border:1px solid rgba(102,187,106,0.2);';
+    document.getElementById('cForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const s = document.getElementById('succ');
+      s.style.display = 'block'; e.target.reset();
+      setTimeout(() => s.style.display = 'none', 3500);
+    });
+  </script>
+  <script>
+    const ham = document.getElementById('hamburger');
+    const menu = document.getElementById('mobileMenu');
+
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      menu.classList.toggle('open');
+      document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close on overlay click
+    menu.addEventListener('click', (e) => {
+      if (e.target === menu) close();
+    });
+
+    // Close on link click
+    document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', close));
+
+    function close() {
+      ham.classList.remove('open');
+      menu.classList.remove('open');
+      document.body.style.overflow = '';
     }
-  }
-
-  /* Gallery filter */
-  function setGFilter(el) {
-    document.querySelectorAll('.gfilt').forEach(f => f.classList.remove('active'));
-    el.classList.add('active');
-  }
-
-  /* Plan selector */
-  function selectPlan(el) {
-    document.querySelectorAll('.rplan').forEach(p => p.classList.remove('selected'));
-    el.classList.add('selected');
-  }
-
-  /* Register submit */
-  function handleRegister(btn) {
-    btn.textContent = '✅ Request Sent! We\'ll contact you soon.';
-    btn.style.background = 'linear-gradient(135deg,#43A047,#1B5E20)';
-    btn.disabled = true;
-  }
-
-  /* Contact submit */
-  function handleContact(btn) {
-    btn.textContent = '✅ Message Sent! We\'ll reply within a few hours.';
-    btn.style.background = 'linear-gradient(135deg,#43A047,#1B5E20)';
-    btn.disabled = true;
-  }
-
-  /* Biz tab */
-  function setBizTab(el) {
-    document.querySelectorAll('.biz-tab').forEach(t => t.classList.remove('active'));
-    el.classList.add('active');
-  }
-
-  /* Scroll reveal */
-  const revealObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-        revealObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.reveal').forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = `opacity .6s ${(i % 4) * 0.1}s ease, transform .6s ${(i % 4) * 0.1}s ease`;
-    revealObs.observe(el);
-  });
-
-  /* Counter animation */
-  function animateCount(el, target, suffix) {
-    let start = 0;
-    const duration = 2000;
-    const step = target / (duration / 16);
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) { start = target; clearInterval(timer); }
-      let display = Math.floor(start);
-      if (target >= 1000) display = (display / 1000).toFixed(0) + 'K+';
-      else display = display + '+';
-      el.textContent = display;
-    }, 16);
-  }
-
-  const counterObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const target = parseInt(e.target.dataset.count);
-        animateCount(e.target, target);
-        counterObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  document.querySelectorAll('[data-count]').forEach(el => counterObs.observe(el));
-</script>
+  </script>
 </body>
+
 </html>
